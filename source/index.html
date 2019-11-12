@@ -8,22 +8,20 @@
 
 <body>
   <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-mobile-header" src="#" width="191" height="38"
-        alt="Логотип в шапке магазина «Cat Energy»">
+    <a class="header__logo logo-cat-energy">
+      <img class="logo-cat-energy__image" src="#" width="101" height="18" alt="Логотип магазина «Cat Energy»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle-open" type="button">Открыть меню</button>
-      <button class="main-nav__toggle-close" type="button">Закрыть меню</button>
-      <ul class="site-list">
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Каталог продукции</a>
+          <a class="site-list__link" href="#">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Подбор продукции</a>
+          <a class="site-list__link" href="#">Подбор продукции</a>
         </li>
       </ul>
     </nav>
@@ -32,113 +30,106 @@
     <section class="first-screen">
       <h1 class="first-screen__title">Функциональное питание для котов</h1>
       <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
-      <img class="first-screen__cat-energy-chicken" src="#" width="280" height="271"
+      <img class="first-screen__main-image" src="#" width="280" height="271"
         alt="Питание для котов «Cat Energy» с курицей">
-      <a class="first-screen__choose-program button" href="#">Подобрать программу</a>
+      <a class="first-screen__choose-program button-mobile" href="#">Подобрать программу</a>
     </section>
     <section class="categories">
-      <h1 class="visually-hidden">Категории питания</h1>
-      <ul class="categories__list">
-        <li class="categories__item__item--slim">
-          <div class="categories__item__wrapper">
-            <h1 class="categories__title">Похудение</h1>
-            <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories__link" href="#">Каталог Slim</a>
-          </div>
+      <h2 class="visually-hidden">Категории питания</h2>
+      <ul class="categories__list food-list">
+        <li class="food-list__item food-list__item--slim">
+          <h3 class="food-list__title">Похудение</h3>
+          <p class="food-list__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="food-list__link" href="#">Каталог Slim</a>
         </li>
-        <li class="categories__item__item--plump">
-          <div class="categories__item__wrapper">
-            <h1 class="categories__title">Набор массы</h1>
-            <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories__link" href="#">Каталог Pro</a>
-          </div>
+        <li class="food-list__item food-list__item--plump">
+          <h3 class="food-list__title">Набор массы</h3>
+          <p class="food-list__description">Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="food-list__link" href="#">Каталог Pro</a>
         </li>
       </ul>
     </section>
     <section class="advantages">
-      <h1 class="advantages__title">Как это работает?</h1>
-      <ul class="advantages__list">
-        <li class="advantages__item__item--function-food">
-          <p class="advantages__description">
+      <h2 class="advantages__title">Как это работает?</h2>
+      <ul class="advantages__list feature-list">
+        <li class="feature-list__item feature-list__item--food">
+          <p class="feature-list__description">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
-        <li class="advantages__item__item--powder">
-          <p class="advantages__description">
+        <li class="feature-list__item feature-list__item--powder">
+          <p class="feature-list__description">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
-        <li class="advantages__item__item--ingestion">
-          <p class="advantages__description">
+        <li class="feature-list__item feature-list__item--ingestion">
+          <p class="feature-list__description">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
-        <li class="advantages__item__item--results">
-          <p class="advantages__description">
+        <li class="feature-list__item feature-list__item--results">
+          <p class="feature-list__description">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
         </li>
       </ul>
     </section>
     <section class="before-after">
-      <div class="before-after__wrapper">
-        <h1 class="before-after__title">Живой пример</h1>
-        <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-          спит по 16 часов в день.</p>
-        <table class="before-after__stats">
-          <tr>
-            <td class="stats__value">5 кг</td>
-            <td class="stats__field">снижение веса</td>
-          </tr>
-          <tr>
-            <td class="stats__value">60 дней</td>
-            <td class="stats__field">затрачено времени</td>
-          </tr>
-        </table>
-        <p class="before-after__sum">Затраты на питание: 15000 руб.</p>
-        <div class="before-after__slider">
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <div class="slider__controls">
-            <label class="slider__controls--left" for="product-1" tabindex="0">Было</label>
-            <label class="slider__controls--right" for="product-2" tabindex="0">Стало</label>
-          </div>
-          <ul class="slider__list">
-            <li class="slider__item__item--one" id="slide1">
-              <img class="slider__image__image--one" src="#" width="320" height="240" alt="Борис до">
-            </li>
-            <li class="slider__item__item--two" id="slide2">
-              <img class="slider__image__image--two" src="#" width="320" height="240" alt="Борис после">
-            </li>
-          </ul>
+      <h2 class="before-after__title">Живой пример</h2>
+      <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+        Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+        спит по 16 часов в день.</p>
+      <table class="before-after__stats stats-table">
+        <tr>
+          <td class="stats-table__value">5 кг</td>
+          <td class="stats-table__field">60 дней</td>
+        </tr>
+        <tr>
+          <th class="stats-table__value">снижение веса</th>
+          <th class="stats-table__field">затрачено времени</th>
+        </tr>
+      </table>
+      <p class="before-after__sum">Затраты на питание: 15000 руб.</p>
+      <div class="before-after__slider slider-cat">
+        <ul class="slider-cat__image-list">
+          <li class="slider-cat__item" id="slide1">
+            <img class="slider-cat__image" src="#" width="320" height="240" alt="Борис до">
+          </li>
+          <li class="slider-cat__item" id="slide2">
+            <img class="slider-cat__image" src="#" width="320" height="240" alt="Борис после">
+          </li>
+        </ul>
+        <div class="slider-cat__toggle slider-cat__toggle--left"></div>
+        <input class="visually-hidden" type="radio" id="cat-one" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="cat-two" name="toggle">
+        <div class="slider-cat__controls">
+          <label class="slider-cat__label" for="cat-one" tabindex="0">Было</label>
+          <label class="slider-cat__label" for="cat-two" tabindex="0">Стало</label>
         </div>
       </div>
     </section>
-
   </main>
   <footer class="footer">
-    <section class="footer__contacts">
-      <h1 class="visually-hidden">Контакты</h1>
+    <div class="footer__contacts contacts">
       <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
       <address class="contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
       <img class="contacts__map" src="#" width="320" height="362"
         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </section>
-    <a class="footer__logo">
-      <img class="footer__logo-mobile-footer" src="#" width="128" height="24" alt="Логотип магазина «Cat Energy»">
+    </div>
+    <a class="header__logo logo-cat-energy">
+      <img class="logo-cat-energy__image" src="#" width="128" height="24" alt="Логотип магазина «Cat Energy»">
     </a>
-    <ul class="footer__social-link-list">
-      <li class="social-link-list__item__item--vk">
-        <a href="#"><span class="visually-hidden">Вконтакте</span></a>
+    <ul class="footer__social-media-list social-media">
+      <li class="social-media__item social-media__item--vk">
+        <a class="social-media__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
       </li>
-      <li class="social-link-list__item__item--insta">
-        <a href="#"><span class="visually-hidden">Instagram</span></a>
+      <li class="social-media__item social-media__item--insta">
+        <a class="social-media__link" href="#"><span class="visually-hidden">Instagram</span></a>
       </li>
-      <li class="social-link-list__item__item--facebook">
-        <a href="#"><span class="visually-hidden">Facebook</span></a>
+      <li class="social-media__item social-media__item--facebook">
+        <a class="social-media__link" href="#"><span class="visually-hidden">Facebook</span></a>
       </li>
     </ul>
     <a class="footer-design">HTML Academy</a>
