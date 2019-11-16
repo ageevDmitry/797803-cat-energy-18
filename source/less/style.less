@@ -15,8 +15,7 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  .no-indent();
   font-family: "Oswald", "Arial", sans-serif;
 }
 
@@ -31,8 +30,6 @@ img {
 
 body ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -52,8 +49,10 @@ input[type="radio"].visually-hidden {
 
 @import "../less/bloks/header.less";
 
-@import "../less/bloks/logo-mobile.less";
-
 @import "../less/bloks/main-nav.less";
+
+@import "../less/bloks/first-screen.less";
+
+@import "../less/bloks/button-mobile.less";
 
 // @import "normalize.less";
