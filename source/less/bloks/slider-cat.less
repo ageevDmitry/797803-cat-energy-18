@@ -1,0 +1,74 @@
+.slider-cat__container {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  margin-top: 20px;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-cat__controls {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 20px;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 117px;
+    width: 84px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 123px;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 3px;
+  }
+}
+
+.slider-cat__label {
+  display: block;
+  width: 38px;
+  min-height: 16px;
+  .text-properties(16px, 20px, 400);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.slider-cat__label--left {
+  margin-left: 44px;
+}
+
+.slider-cat__label--right {
+  margin-right: 44px;
+}
+
+#cat-one:checked~.slider-cat__container {
+  background-image: url("../img/before-mobile@1x.png");
+}
+
+#cat-one:checked~.slider-cat__controls::after {
+  left: 123px;;
+}
+
+#cat-two:checked~.slider-cat__container {
+  background-image: url("../img/after-mobile@1x.png");
+}
+
+#cat-two:checked~.slider-cat__controls::after {
+  left: 160px;
+}

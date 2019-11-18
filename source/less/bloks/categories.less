@@ -1,0 +1,136 @@
+.categories {
+  width: 320px;
+  min-height: 575px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.categories__list {
+  .no-indent();
+}
+
+.categories__item {
+  position: relative;
+  width: auto;
+  min-height: 265px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.categories__item:last-child {
+  margin-bottom: 0px;
+}
+
+.categories__item--slim::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.categories__item--slim::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 32px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories__item--pro::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.categories__item--pro::after {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 10px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories__title {
+  .no-indent();
+  margin-left: 70px;
+  .text-properties(24px, 37px, 400);
+  text-transform: uppercase;
+}
+
+.categories__description {
+  .no-indent();
+  padding-top: 35px;
+  padding-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  .text-properties(14px, 18px, 400);
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.categories__link {
+  display: block;
+  position: relative;
+  width: 120px;
+  min-height: 20px;
+  margin-top: 20px;
+  .text-properties(16px, 16px, 400);
+  color: #000000;
+
+  &:active {
+    color: #b7b7b7;
+  }
+}
+
+.categories__link-arrow-long {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  width: 24px;
+  height: 11px;
+}
+
+.categories__link-arrow-very-long {
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: 90px;
+  width: 33px;
+  height: 11px;
+}
+
+.categories__link:hover .categories__link-arrow-long {
+  display: none;
+}
+
+.categories__link:hover .categories__link-arrow-very-long {
+  display: block;
+}
+
+// .categories__link-arrow-long svg style .st0 {
+//   fill: red;
+// }

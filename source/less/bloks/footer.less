@@ -1,0 +1,110 @@
+.footer {
+  width: 320px;
+  min-height: 713px;
+  margin: 0 auto;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.footer__slogan {
+  display: block;
+  width: 125px;
+  .text-properties(16px, 20px, 400);
+  text-transform: uppercase;
+}
+
+.footer__address {
+  display: block;
+  width: 140px;
+  .text-properties(14px, 20px, 400);
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+}
+
+.footer__map-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: 135px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/map-pin2.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.footer__social-media-container {
+  width: auto;
+  min-height: 64px;
+  padding-top: 25px;
+  padding-right: 80px;
+  padding-bottom: 24px;
+  padding-left: 80px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  .no-indent();
+}
+
+.footer__social-media-item {
+  width: 23px;
+  height: 23px;
+}
+
+.footer__design-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+  min-height: 78px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 31px;
+  padding-left: 20px;
+}
+
+.footer__design-link {
+  display: block;
+  width: 112px;
+  color: #444444;
+
+  &:active {
+    color: #f2f2f2;
+  }
+}
+
+.footer__design-link-logo {
+  display: block;
+  width: 27px;
+  height: 35px;
+}

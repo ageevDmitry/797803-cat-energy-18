@@ -1,0 +1,49 @@
+.catalog-additional-goods {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.catalog-additional-goods__title {
+  .no-indent();
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  .text-properties(24px, 24px, 400);
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog-additional-goods__special-offer {
+  position: relative;
+  width: 280px;
+  min-height: 289px;
+  .no-indent();
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 184px;
+  padding-right: 55px;
+  padding-bottom: 44px;
+  padding-left: 55px;
+  font-family: "Arial", sans-serif;
+  .text-properties(16px, 20px, 400);
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 115px;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
