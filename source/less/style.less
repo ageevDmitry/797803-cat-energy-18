@@ -1,78 +1,39 @@
-@import "fonts.less";
+@import "../less/general/normalize.less";
 
-@import "variables.less";
+@import "../less/general/fonts.less";
 
-@import "mixins.less";
+@import "../less/general/variables.less";
 
-html {
-  box-sizing: border-box
-}
+@import "../less/general/mixins.less";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit
-}
+@import "../less/general/common.less";
 
-body {
-  .no-indent();
-  font-family: "Oswald", "Arial", sans-serif;
-}
+@import "../less/blocks/header.less";
 
-a {
-  text-decoration: none;
-}
+@import "../less/blocks/logo.less";
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+@import "../less/blocks/main-nav.less";
 
-body ul {
-  list-style: none;
-}
+@import "../less/blocks/first-screen.less";
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "../less/blocks/button.less";
 
-@import "../less/bloks/header.less";
+@import "../less/blocks/categories.less";
 
-@import "../less/bloks/main-nav.less";
+@import "../less/blocks/features.less";
 
-@import "../less/bloks/first-screen.less";
+@import "../less/blocks/before-after.less";
 
-@import "../less/bloks/button-mobile.less";
+@import "../less/blocks/slider-cat.less";
 
-@import "../less/bloks/categories.less";
+@import "../less/blocks/catalog-goods.less";
 
-@import "../less/bloks/features.less";
+@import "../less/blocks/list-goods.less";
 
-@import "../less/bloks/before-after.less";
+@import "../less/blocks/show-all.less";
 
-@import "../less/bloks/slider-cat.less";
+@import "../less/blocks/catalog-additional-goods.less";
 
-@import "../less/bloks/catalog-goods.less";
+@import "../less/blocks/additional-goods-list.less";
 
-@import "../less/bloks/list-goods.less";
-
-@import "../less/bloks/show-all.less";
-
-@import "../less/bloks/catalog-additional-goods.less";
-
-@import "../less/bloks/additional-goods-list.less";
-
-@import "../less/bloks/footer.less";
-
-// @import "normalize.less";
+@import "../less/blocks/footer.less";
