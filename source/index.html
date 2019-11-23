@@ -9,21 +9,23 @@
 
 <body>
   <header class="header">
-    <a class="header__logo logo"></a>
-    <nav class="header__main-nav main-nav">
-      <button class="main-nav__toggle main-nav__toggle--burger" type="button"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор продукции</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__center-container">
+      <a class="header__logo logo">Логотип</a>
+      <nav class="header__main-nav main-nav">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор продукции</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <h1 class="visually-hidden">Интернет-магазин для питания котов «Cat Energy»</h1>
