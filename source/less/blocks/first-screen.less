@@ -1,18 +1,9 @@
-.first-screen {
-  width: 320px;
-  min-height: 480px;
-  margin: 0 auto;
-}
-
-.first-screen__container {
+.first-screen__center-container {
   position: relative;
-  width: auto;
+  .center-container(360px, 28px 20px 20px 28px);
   min-height: 305px;
   margin-bottom: 135px;
-  padding-top: 28px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  background-color: @little-green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -32,7 +23,7 @@
 }
 
 .first-screen__title {
-  .no-indent();
+  padding: 0;
   .text-properties(36px, 36px, 400);
   text-align: center;
   color: #ffffff;
