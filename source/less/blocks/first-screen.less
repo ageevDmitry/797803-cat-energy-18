@@ -1,12 +1,32 @@
 .first-screen__center-container {
+  .center-container(360px, 20px);
+  min-height: 480px;
+}
+
+.first-screen__title {
   position: relative;
-  .center-container(360px, 28px 20px 20px 28px);
-  min-height: 305px;
-  margin-bottom: 135px;
-  background-color: @little-green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 28px;
+  .text-properties(36px, 36px, 400);
+  text-align: center;
+  color: #ffffff;
+}
+
+.first-screen__slogan {
+  display: block;
+  width: 205px;
+  margin: 0 auto;
+  padding-top: 15px;
+  .text-properties(14px, 14px, 400);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.first-screen__choose-program {
+  position: relative;
+  margin: 320px auto 0 auto;
 
   &::after {
     display: block;
@@ -22,22 +42,6 @@
   }
 }
 
-.first-screen__title {
-  padding: 0;
-  .text-properties(36px, 36px, 400);
-  text-align: center;
-  color: #ffffff;
-}
-
-.first-screen__slogan {
-  display: block;
-  margin-top: 20px;
-  .text-properties(14px, 14px, 400);
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.first-screen__choose-program {
-  margin: 0 20px;
-}
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 0 0;
