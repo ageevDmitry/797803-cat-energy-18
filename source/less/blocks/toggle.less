@@ -1,0 +1,21 @@
+.toggle {
+  display: block;
+  width: 24px;
+  height: 18px;
+  margin: 23px 20px 20px 24px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &--opened {
+    background-color: @pink;
+  }
+
+  &--closed {
+    background-color: @black;
+  }
+
+  @media @tablet-width {
+    display: none;
+  }
+}

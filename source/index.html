@@ -3,19 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy: Главная</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__center-container">
-      <a class="header__logo logo">
-        <div class="logo__svg"></div>
-      </a>
+    <div class="header__center-wrapper">
+        <a class="header__logo logo">
+          <img class="logo__img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+        </a>
+        <button class="header__toggle toggle toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       <nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden">Открыть
-            меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active">Главная</a>
@@ -33,7 +35,7 @@
   <main class="main">
     <h1 class="visually-hidden">Интернет-магазин для питания котов «Cat Energy»</h1>
     <section class="first-screen">
-      <div class="first-screen__center-container">
+      <div class="first-screen__center-wrapper">
         <h2 class="first-screen__title">Функциональное питание для котов</h2>
         <b class="first-screen__slogan">Занялся собой? Займись котом!</b>
       </div>
