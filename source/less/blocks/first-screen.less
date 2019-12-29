@@ -1,42 +1,121 @@
-.first-screen__center-wrapper {
-  .center-wrapper;
-}
+  .first-screen__center-wrapper {
+    position: relative;
+    min-height: 481px;
+    .center-wrapper;
+    padding-top: 28px;
 
-.first-screen__title {
-  position: relative;
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 28px;
-  .text-properties(36px, 36px, 400);
-  text-align: center;
-  color: #ffffff;
-}
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 305px;
+      top: 0;
+      right: 0;
+      background-color: @little-green;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: -3;
+    }
 
-.first-screen__slogan {
-  display: block;
-  width: 205px;
-  margin: 0 auto;
-  padding-top: 15px;
-  .text-properties(14px, 14px, 400);
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+    &::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 305px;
+      top: 0;
+      right: 0;
+      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: -2;
+    }
 
-.first-screen__choose-program {
-  position: relative;
-  margin: 320px auto 0 auto;
+    @media @tablet-width {
+      min-height: 850px;
+      padding-top: 40px;
+      background-image: none;
 
-  &::after {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    @media @desktop-width {
+      min-height: 606px;
+      padding-top: 80px;
+    }
+  }
+
+  .first-screen__title {
     display: block;
-    content: "";
+    margin: 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    .text-properties(36px, 36px, 400);
+    color: @white;
+    text-align: center;
+
+    @media @tablet-width {
+      margin: 0 222px 0 90px;
+      .text-properties(60px, 60px, 400);
+      color: @black;
+      text-align: left;
+    }
+
+    @media @desktop-width {
+      margin: 0 650px 0 80px;
+    }
+  }
+
+  .first-screen__slogan {
+    display: block;
+    margin-top: 15px;
+    font-family: "Oswald", "Arial", sans-serif;
+    .text-properties(14px, 14px, 400);
+    text-transform: uppercase;
+    color: @white;
+    text-align: center;
+
+    @media @tablet-width {
+      margin: 45px 222px 0 90px;
+       .text-properties(20px, 20px, 400);
+      color: @black;
+      text-align: left;
+    }
+
+    @media @desktop-width {
+      margin: 30px 650px 0 80px;
+    }
+  }
+
+  .first-screen__img {
     position: absolute;
     top: 165px;
-    left: 20px;
-    width: 280px;
-    height: 271px;
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    right: 14px;
+    z-index: -1;
+
+    @media @tablet-width {
+      top: 320px;
+      right: 210px;
+    }
+
+    @media @desktop-width {
+      top: 165px;
+      right: 500px;
+    }
   }
-}
+
+  .first-screen__choose-program {
+    margin-top: 312px;
+
+    @media @tablet-width {
+      margin: 50px 374px 0 90px;
+    }
+
+    @media @desktop-width {
+      margin: 50px 650px 0 80px;
+    }
+  }
