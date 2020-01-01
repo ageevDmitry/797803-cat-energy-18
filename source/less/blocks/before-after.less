@@ -6,7 +6,11 @@
   background-color: @grey;
 
   @media @tablet-width {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid @dark-grey;
     background-color: transparent;
+
     &::after {
       content: "";
       position: absolute;
@@ -17,6 +21,31 @@
       background-color: @grey;
       z-index: -1;
     }
+}
+
+  @media @desktop-width {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: none;
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+}
+
+.before-after__left-wrapper {
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media @desktop-width {
+    width: 440px;
+    flex-wrap: column;
   }
 }
 
@@ -24,6 +53,14 @@
   margin: 0;
   font-family: @oswald;
   .text-properties(36px, 60px, 400);
+
+  @media @tablet-width {
+    .text-properties(60px, 60px, 400);
+  }
+
+  @media @desktop-width {
+    width: 450px;
+  }
 }
 
 .before-after__description {
@@ -31,35 +68,67 @@
   margin-top: 40px;
   font-family: @arial;
   .text-properties(14px, 18px, 400);
+
+  @media @tablet-width {
+    margin-top: 70px;
+    .text-properties(16px, 24px, 400);
+  }
+
+  @media @desktop-width {
+    margin-top: 150px;
+    width: 450px;
+  }
 }
 
 .before-after__stats {
   margin-top: 30px;
   border-spacing: 33px 0px;
+
+  @media @tablet-width {
+    width: 366px;
+    margin-top: 80px;
+  }
 }
 
 .before-after__value {
-  width: 124px;
+  font-family: @oswald;
   .text-properties(24px, 24px, 400);
   text-align: center;
   text-transform: uppercase;
+
+  @media @tablet-width {
+    .text-properties(30px, 37px, 400);
+  }
 }
 
 .before-after__field {
-  width: 50px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px 10px 10px;
   .text-properties(12px, 12px, 400);
-  font-family: "Arial", sans-serif;
+  font-family: @arial;
   text-align: center;
+
+  @media @tablet-width {
+    .text-properties(14px, 14px, 400);
+  }
 }
 
 .before-after__sum {
-  .no-indent();
-  margin-top: 15px;
-  padding: 0 20px;
-  .text-properties(14px, 20px, 400);
-  text-align: center;
+  margin: 0;
+  margin-top: 30px;
+  font-family: @oswald;
+  .text-properties(14px, 30px, 400);
   text-transform: uppercase;
+  text-align: center;
+
+  @media @tablet-width {
+    width: 180px;
+    margin-top: 80px;
+    .text-properties(20px, 30px, 400);
+    text-align: right;
+  }
+
+  @media @desktop-width {
+    width: 366px;
+    text-align: left;
+  }
 }
