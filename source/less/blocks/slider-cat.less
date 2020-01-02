@@ -143,6 +143,15 @@
 
   @media @tablet-width {
     .text-properties(20px, 20px, 400);
+    border-bottom: 1px dotted @dark-grey;
+
+    &:hover {
+      border-bottom: 1px solid @dark-grey;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 

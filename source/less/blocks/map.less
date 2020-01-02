@@ -1,0 +1,27 @@
+.map {
+  position: relative;
+  width: 320px;
+  min-height: 362px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: 135px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/map-pin2.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media @tablet-width {
+    width: 768px;
+    min-height: 396px;
+  }
+
+  @media @desktop-width {
+    width: 1300px;
+    min-height: 396px;
+  }
+}
