@@ -3,64 +3,73 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Cat Energy: Catalog</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cat Energy: Главная</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <a href="index.html" class="header__logo logo"></a>
-    <nav class="header__main-nav main-nav">
-      <button class="header__toggle header__toggle--burger" type="button"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор продукции</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__center-wrapper">
+      <a class="header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+      </a>
+      <button class="header__toggle toggle toggle--closed" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link main-nav__link--active">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Подбор продукции</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="catalog-goods">
-      <h1 class="catalog-goods__title">Каталог продукции</h1>
-      <ul class="catalog-goods__list-goods list-goods">
-        <li class="list-goods__item">
-          <img class="list-goods__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144"
-            alt="Изображение товара">
-          <div class="list-goods__container">
-            <h3 class="list-goods__title">Cat Energy Pro 500 г</h3>
-            <table class="list-goods__info-goods info-goods">
-              <tr>
-                <th class="info-goods__field">Объем</th>
-                <td class="info-goods__value">500 г</td>
-              </tr>
-              <tr>
-                <th class="info-goods__field">Вкус</th>
-                <td class="info-goods__value">Курица</td>
-              </tr>
-              <tr>
-                <th class="info-goods__field">Цена</th>
-                <td class="info-goods__value">700 Р.</td>
-              </tr>
-            </table>
-          </div>
-          <a class="list-goods__link button" href="#">Заказать</a>
-        </li>
-        <li class="list-goods__item show-all">
-          <p class="show-all__descrition">
-            Показать еще 100500 товаров
-          </p>
-          <b class="show-all__slogan">
-            На самом деле вкусов еще больше!
-          </b>
-          <a class="show-all__link button button--show-all">Показать все</a>
-        </li>
-      </ul>
+      <div class="catalog-goods__center-wrapper">
+        <h1 class="catalog-goods__title">Каталог продукции</h1>
+        <ul class="catalog-goods__list-goods list-goods">
+          <li class="list-goods__item">
+            <img class="list-goods__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144"
+              alt="Изображение товара">
+            <div class="list-goods__container">
+              <h3 class="list-goods__title">Cat Energy Pro 500 г</h3>
+              <table class="list-goods__info-goods info-goods">
+                <tr>
+                  <th class="info-goods__field">Объем</th>
+                  <td class="info-goods__value">500 г</td>
+                </tr>
+                <tr>
+                  <th class="info-goods__field">Вкус</th>
+                  <td class="info-goods__value">Курица</td>
+                </tr>
+                <tr>
+                  <th class="info-goods__field">Цена</th>
+                  <td class="info-goods__value">700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="list-goods__link button" href="#">Заказать</a>
+          </li>
+          <li class="list-goods__item show-all">
+            <p class="show-all__descrition">
+              Показать еще 100500 товаров
+            </p>
+            <b class="show-all__slogan">
+              На самом деле вкусов еще больше!
+            </b>
+            <a class="show-all__link button button--show-all">Показать все</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="catalog-additional-goods">
       <h2 class="catalog-additional-goods__title">Дополнительные товары</h2>
@@ -82,37 +91,31 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__contacts">
-      <b class="footer__slogan">Приглашаем к сотрудничеству дилеров!</b>
-      <address class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
-    </div>
-    <div class="footer__map-container">
-      <img class="footer__map" src="../img/bg-map-mobile@1x.png" width="320" height="362"
-        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    </div>
-    <a class="footer__logo logo">
-    </a>
-    <div class="footer__social-media-container">
-      <ul class="footer__social-media-list">
-        <li class="footer__social-media-item">
-          <a class="footer__social-media-link" href="#"><span class="visually-hidden">Вконтакте</span>
+    <div class="footer__center-wrapper">
+      <a class="footer__logo logo">
+        <img class="logo__img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+      </a>
+      <ul class="footer__social-media-list social-media">
+        <li class="social-media__item">
+          <a class="social-media__link" href="#"><span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="footer__social-media-item">
-          <a class="footer__social-media-link" href="#"><span class="visually-hidden">Instagram</span>
+        <li class="social-media__item">
+          <a class="social-media__link" href="#"><span class="visually-hidden">Instagram</span>
           </a>
         </li>
-        <li class="footer__social-media-item">
-          <a class="footer__social-media-link" href="#"><span class="visually-hidden">Facebook</span>
+        <li class="social-media__item">
+          <a class="social-media__link" href="#"><span class="visually-hidden">Facebook</span>
           </a>
         </li>
       </ul>
-    </div>
-    <div class="footer__design-container">
-      <a class="footer__design-link" href="https://up.htmlacademy.ru/adaptive/18" class="footer__design-link">HTML
-        Academy</a>
-      <a class="footer__design-link-logo" href="https://up.htmlacademy.ru/adaptive/18" class="footer__design-link-logo">
-      </a>
+      <div class="footer__design design">
+        <a class="design-link" href="https://up.htmlacademy.ru/adaptive/18">HTML
+          Academy</a>
+        <a class="design-logo" href="https://up.htmlacademy.ru/adaptive/18"><span class="visually-hidden">Logo HTML
+            Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

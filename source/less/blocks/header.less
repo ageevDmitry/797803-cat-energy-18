@@ -15,32 +15,6 @@
     position: relative;
     margin: 0 auto;
     padding: 25px 40px;
-
-    @media @desktop-width {
-      &::before {
-        content: "";
-        position: absolute;
-        width: 50%;
-        height: 696px;
-        top: 0;
-        right: 0;
-        background-image: url("../img/index-background-desktop@1x.jpg");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        z-index: -1;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 50%;
-        height: 696px;
-        top: 0;
-        right: 0;
-        background-color: @little-green;
-        z-index: -2;
-      }
-    }
   }
 }
 

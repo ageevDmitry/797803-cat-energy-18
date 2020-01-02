@@ -47,6 +47,32 @@
     @media @desktop-width {
       min-height: 606px;
       padding-top: 80px;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 696px;
+        top: -90px;
+        right: 0;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        z-index: -1;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 696px;
+        top: -90px;
+        right: 0;
+        background-color: @little-green;
+        z-index: -2;
+      }
     }
   }
 
