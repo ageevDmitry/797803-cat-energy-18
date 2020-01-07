@@ -1,29 +1,35 @@
 .additional-goods-list {
-  .no-indent();
+  .list-style-default;
 }
 
 .additional-goods-list__item {
-  width: 320px;
-  margin: 0 auto;
-  padding-top: 14px;
-  padding-right: 20px;
-  padding-bottom: 17px;
-  padding-left: 20px;
-  border-bottom: 1px solid #ededed;
+  padding: 14px 0 17px 0;
+  border-bottom: 1px solid @grey;
 }
 
 .additional-goods-list__title {
-  .no-indent();
+  margin: 0;
+  font-family: @oswald;
   .text-properties(16px, 16px, 400);
   text-transform: uppercase;
 }
 
 .additional-goods-list__info {
-  width: 280px;
+  width: 100%;
   margin-top: 10px;
-  margin-bottom: 14px;
+}
+
+.additional-goods-list__field {
+  font-family: @arial;
+  .text-properties(14px, 14px, 400);
 }
 
 .additional-goods-list__value {
+  font-family: @arial;
+  .text-properties(14px, 14px, 400);
   text-align: right;
+}
+
+.additional-goods-list__link {
+  margin-top: 10px;
 }
