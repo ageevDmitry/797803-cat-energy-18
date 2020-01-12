@@ -1,10 +1,14 @@
 .profile {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 30px 20px 30px 20px;
   border-bottom: 1px solid @dark-grey;
 }
 
 .profile__description {
-  width: 225px;
+  width: 235px;
   margin: 0;
   margin-bottom: 40px;
   font-family: @oswald;
@@ -12,8 +16,64 @@
   text-transform: uppercase;
 }
 
-.profile__label {
+.profile__label-name {
+  display: block;
+  width: 50px;
+  margin-top: 15px;
   font-family: @oswald;
   .text-properties(16px, 18px, 400);
   text-transform: uppercase;
+}
+
+.profile__input-name {
+  display: block;
+  width: 229px;
+  height: 45px;
+  padding: 0 15px;
+  font-family: @oswald;
+  .text-properties(16px, 18px, 400);
+  text-transform: uppercase;
+  border: 1px solid @dark-grey;
+}
+
+.profile__label-weight {
+  display: block;
+  width: 60px;
+  margin-top: 25px;
+  font-family: @oswald;
+  .text-properties(16px, 18px, 400);
+  text-transform: uppercase;
+}
+
+.profile__input-weight {
+  display: block;
+  width: 204px;
+  height: 45px;
+  margin-top: 14px;
+  padding: 0 15px;
+  font-family: @oswald;
+  .text-properties(16px, 18px, 400);
+  text-transform: uppercase;
+  border: 1px solid @dark-grey;
+}
+
+.profile__label-age {
+  display: block;
+  width: 95px;
+  margin-top: 25px;
+  font-family: @oswald;
+  .text-properties(16px, 18px, 400);
+  text-transform: uppercase;
+}
+
+.profile__input-age {
+  display: block;
+  width: 172px;
+  height: 45px;
+  margin-top: 14px;
+  padding: 0 15px;
+  font-family: @oswald;
+  .text-properties(16px, 18px, 400);
+  text-transform: uppercase;
+  border: 1px solid @dark-grey;
 }
