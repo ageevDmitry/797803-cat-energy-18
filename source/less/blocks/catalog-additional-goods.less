@@ -1,0 +1,123 @@
+.catalog-additional-goods__center-wrapper {
+  .center-wrapper;
+  padding-top: 25px;
+  padding-bottom: 35px;
+
+  @media @tablet-width {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  @media @desktop-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.catalog-additional-goods__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 30px;
+  font-family: @oswald;
+  .text-properties(24px, 24px, 400);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    top: 15px;
+    right: -20px;
+    background-color: @little-green;
+  }
+
+  @media @tablet-width {
+    padding-left: 38px;
+    padding-right: 38px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 53px;
+      height: 3px;
+      top: 15px;
+      left: -30px;
+      background-color: @little-green;
+    }
+
+    &::after {
+      width: 450px;
+      right: -30px;
+    }
+
+    @media @desktop-width {
+      &::after {
+        width: 960px;
+        right: -40px;
+      }
+    }
+  }
+
+  @media @desktop-width {
+    width: 1260px;
+  }
+}
+
+.catalog-additional-goods__special-offer {
+  position: relative;
+  width: 280px;
+  min-height: 289px;
+  margin: 0;
+  margin-top: 40px;
+  padding: 184px 55px 44px 55px;
+  font-family: "Arial", sans-serif;
+  .text-properties(16px, 20px, 400);
+  color: @white;
+  text-align: center;
+  background-color: @little-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 115px;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media @tablet-width {
+    width: 708px;
+    min-height: 200px;
+    padding: 80px 100px 44px 400px;
+    text-align: left;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      top: 64px;
+      left: 115px;
+    }
+  }
+
+  @media @desktop-width {
+    width: 245px;
+    min-height: 289px;
+    margin: 0;
+    padding: 180px 37px 44px 37px;
+    text-align: center;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      top: 64px;
+      left: 95px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.list-style-default() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-properties (@font-size, @line-height, @font-weight) {
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: @font-weight;
+}
+
+.center-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media @tablet-width {
+    padding: 0 30px;
+  }
+
+  @media @desktop-width {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+}

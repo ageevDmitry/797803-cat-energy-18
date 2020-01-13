@@ -1,0 +1,32 @@
+.design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 40px;
+
+  @media @tablet-width {
+    width: 162px;
+    padding: 0;
+  }
+}
+
+.design-link {
+  font-family: @arial;
+  .text-properties(16px, 16px, 400);
+  color: @black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.design-logo {
+  width: 27px;
+  height: 34px;
+  background-color: @dark-grey;
+}
