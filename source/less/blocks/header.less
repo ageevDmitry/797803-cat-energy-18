@@ -4,33 +4,18 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-
-  @media @tablet-width {
-    margin: 0 auto;
-    padding: 25px 30px;
-  }
-
-  @media @desktop-width {
-    max-width: 1300px;
-    position: relative;
-    margin: 0 auto;
-    padding: 25px 40px;
-  }
+  .center-wrapper
 }
 
 .header__logo {
-  margin: 11px 20px 16px 20px;
-
-  @media @tablet-width {
-    margin: 0;
-  }
+  margin: 11px 0 16px 0;
 }
 
 .header__toggle {
   display: block;
   width: 24px;
   height: 18px;
-  margin: 23px 20px 20px 24px;
+  margin: 23px 0 20px auto;
   padding: 0;
   background-color: @white;
   background-image: url("../img/icon-mobile-menu.svg");
@@ -43,7 +28,7 @@
     display: block;
     width: 24px;
     height: 18px;
-    margin: 23px 20px 20px 24px;
+    margin: 23px 0 20px auto;
     padding: 0;
     background-color: @white;
     background-image: url("../img/icon-close.svg");
@@ -51,6 +36,10 @@
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+
+    @media @tablet-width {
+      display: none;
+    }
   }
 
   @media @tablet-width {
