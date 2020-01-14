@@ -22,9 +22,19 @@
 }
 
 .main-nav__item {
+  position: relative;
   padding: 24px 15px 20px 15px;
-  border-top: 1px solid @grey;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 3px;
+    top: 15px;
+    left: -30px;
+    background-color: tomato;
+  }
 
   &:last-child {
     border-bottom: 1px solid @grey;
@@ -37,7 +47,7 @@
     border: none;
 
     &:last-child {
-      padding-right:  0;
+      padding-right: 0;
       border-bottom: none;
     }
   }
