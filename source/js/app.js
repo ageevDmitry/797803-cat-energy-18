@@ -16,11 +16,11 @@
       navMain.classList.remove('main-nav--opened');
     }
 
-    if (navToggle.classList.contains('header__toggle--closed')) {
-      navToggle.classList.remove('header__toggle--closed');
+    if (navToggle.classList.contains('header__toggle')) {
+      navToggle.classList.remove('header__toggle');
       navToggle.classList.add('header__toggle--opened');
     } else {
-      navToggle.classList.add('header__toggle--closed');
+      navToggle.classList.add('header__toggle');
       navToggle.classList.remove('header__toggle--opened');
     }
   });
