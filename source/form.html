@@ -14,7 +14,7 @@
       <a class="header__logo logo" href="index.html">
         <img class="logo__img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
       </a>
-      <button class="header__toggle" type="button">
+      <button class="header__toggle toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
@@ -47,7 +47,7 @@
             <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7">
           </label>
           <label class="profile__label" for="user-age">Возраст(лет):
-            <input class="profile__input" id="user__age" type="text" name="age" value="" placeholder="7">
+            <input class="profile__input" id="user-age" type="text" name="age" value="" placeholder="7">
           </label>
         </div>
         <div class="form__program-categories program-categories">
@@ -71,42 +71,44 @@
         </div>
         <div class="form__personal-info personal-info">
           <h2 class="personal-info__title">Контактные данные (владелец кота)</h2>
-          <label class="personal-info__label-email" for="user-mail">E-mail*:</label>
-          <input class="personal-info__input-email" id="user-mail" type="text" name="mail" value=""
-            placeholder="kuklachev@gmail.com">
-          <label class="personal-info__label-phone" for="user-phone">Вес(кг):*</label>
-          <input class="personal-info__input-phone" id="user-phone" type="text" name="phone" value=""
-            placeholder="8 (960) 900-60-90">
+          <label class="personal-info__label" for="user-mail"><nobr>E-mail*:</nobr><input class="personal-info__input" id="user-mail" type="text" name="mail" value=""
+              placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="personal-info__label" for="user-phone">Вес(кг):*
+            <input class="personal-info__input" id="user-phone" type="text" name="phone" value=""
+              placeholder="8 (960) 900-60-90">
+          </label>
         </div>
         <div class="form__user-message user-message">
-          <label class="user-message__label" for="user-message">Комментарий:</label>
-          <textarea id="user-message" name="message" placeholder="Расскажите обо все повадках кота" rows="4"></textarea>
+          <h2 class="user-message__title">Комментарий</h2>
+          <textarea  class="user-message__text-area" id="user-message" name="message" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
         </div>
         <div class="form__additional-goods-chekbox additional-goods-chekbox">
-          <ul class="additional-goods-chekbox__extra-list extra-list">
-            <li class="extra-list__item">
-              <input class="visually-hidden" type="checkbox" name="good" value="sugar" id="good-sugar" tabindex="0"
+          <h2 class="additional-goods-chekbox__title">Дополнительно</h2>
+          <ul class="additional-goods-chekbox__list">
+            <li class="additional-goods-chekbox__item">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="sugar" id="good-sugar" tabindex="0"
                 aria-label="Сахарозаменитель" checked>
-              <label class="extra-list__label" for="good-sugar">Сахарозаменитель</label>
+              <label class="additional-goods-chekbox__label" for="good-sugar">Сахарозаменитель</label>
             </li>
-            <li class="extra-list__item">
-              <input class="visually-hidden" type="checkbox" name="good" value="water" id="good-water" tabindex="0"
-                aria-label="Питьевая вода" checked>
-              <label class="extra-list__label" for="good-water">Питьевая вода</label>
+            <li class="additional-goods-chekbox__item">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="water" id="good-water" tabindex="0"
+                aria-label="Питьевая вода">
+              <label class="additional-goods-chekbox__label" for="good-water">Питьевая вода</label>
             </li>
-            <li class="extra-list__item">
-              <input class="visually-hidden" type="checkbox" name="good" value="milk" id="good-milk" tabindex="0"
-                aria-label="Молоко" checked>
-              <label class="extra-list__label" for="good-milk">Молоко</label>
+            <li class="additional-goods-chekbox__item">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="milk" id="good-milk" tabindex="0"
+                aria-label="Молоко">
+              <label class="additional-goods-chekbox__label" for="good-milk">Молоко</label>
             </li>
-            <li class="extra-list__item">
-              <input class="visually-hidden" type="checkbox" name="good" value="vitamins" id="good-vitamins"
-                tabindex="0" aria-label="Витамины" checked>
-              <label class="extra-list__label" for="good-vitamins">Витамины</label>
+            <li class="additional-goods-chekbox__item">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="vitamins" id="good-vitamins"
+                tabindex="0" aria-label="Витамины">
+              <label class="additional-goods-chekbox__label" for="good-vitamins">Витамины</label>
             </li>
           </ul>
         </div>
-        <button class="form__button button-mobile" type="submit">Отправить заявку</button>
+        <button class="form__button button" type="submit">Отправить заявку</button>
         <p class="form__field-info">
           * - Обязательные поля
         </p>
