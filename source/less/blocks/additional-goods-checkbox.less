@@ -1,6 +1,14 @@
 .additional-goods-chekbox {
   position: relative;
-  margin-top: 30px;
+  padding: 30px 0;
+
+  @media @tablet-width {
+    padding: 30px 40px;
+  }
+
+  @media @desktop-width {
+    padding: 30px 0;
+  }
 }
 
 .additional-goods-chekbox__title {
@@ -24,13 +32,28 @@
 
 .additional-goods-chekbox__list {
   .list-style-default;
+
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .additional-goods-chekbox__item {
   margin: 0 0 25px 45px;
 
   &:last-child {
-    margin: 0 0 0 45px;
+    margin-bottom: 0;
+  }
+
+  @media @tablet-width {
+    width: 269px;
+  }
+
+  @media @desktop-width {
+    width: 245px;
   }
 }
 
