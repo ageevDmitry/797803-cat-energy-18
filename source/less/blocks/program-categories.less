@@ -1,13 +1,13 @@
 .program-categories {
   position: relative;
-  padding: 30px 0;
+  margin-top: 50px;
 
   &::before {
     content: "";
     position: absolute;
     width: 320px;
     height: 1px;
-    bottom: 0;
+    bottom: -25px;
     left: -20px;
     background-color: @dark-grey;
 
@@ -15,6 +15,12 @@
       display: none;
     }
   }
+
+  @media @tablet-width {
+    margin: 30px 80px 30px 80px;
+    border: 1px solid @grey;
+  }
+
 }
 
 .program-categories__list {
