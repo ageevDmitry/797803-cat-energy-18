@@ -40,23 +40,26 @@
           <p class="profile__description">Заполните анкету и мы подберем
             программу питания для вашего кота
           </p>
-          <label class="profile__label-name" for="user-name">Имя*:</label>
-          <input class="profile__input-name" id="user-name" type="text" name="login" value="" placeholder="Барсик">
-          <label class="profile__label-weight" for="user-weight">Вес(кг):*</label>
-          <input class="profile__input-weight" id="user-weight" type="text" name="weight" value="" placeholder="7">
-          <label class="profile__label-age" for="user-age">Возраст(лет):</label>
-          <input class="profile__input-age" id="user__age" type="text" name="age" value="" placeholder="7">
+          <label class="profile__label" for="user-name">Имя*:
+            <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик">
+          </label>
+          <label class="profile__label" for="user-weight">Вес(кг):*
+            <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7">
+          </label>
+          <label class="profile__label" for="user-age">Возраст(лет):
+            <input class="profile__input" id="user__age" type="text" name="age" value="" placeholder="7">
+          </label>
         </div>
         <div class="form__program-categories program-categories">
           <ul class="program-categories__list">
             <li class="program-categories__item">
-              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="slim" id="categories-slim"
-                tabindex="0" aria-label="Похудение" checked>
+              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="slim"
+                id="categories-slim" tabindex="0" aria-label="Похудение" checked>
               <label class="program-categories__label" for="categories-slim">Похудение</label>
             </li>
             <li class="program-categories__item">
-              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="plump" id="categories-plump"
-                tabindex="0" aria-label="Похудение">
+              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="plump"
+                id="categories-plump" tabindex="0" aria-label="Похудение">
               <label class="program-categories__label" for="categories-plump">Набор массы</label>
             </li>
             <li class="program-categories__item">
@@ -69,9 +72,11 @@
         <div class="form__personal-info personal-info">
           <h2 class="personal-info__title">Контактные данные (владелец кота)</h2>
           <label class="personal-info__label-email" for="user-mail">E-mail*:</label>
-          <input class="personal-info__input-email" id="user-mail" type="text" name="mail" value="" placeholder="kuklachev@gmail.com">
+          <input class="personal-info__input-email" id="user-mail" type="text" name="mail" value=""
+            placeholder="kuklachev@gmail.com">
           <label class="personal-info__label-phone" for="user-phone">Вес(кг):*</label>
-          <input class="personal-info__input-phone"id="user-phone" type="text" name="phone" value="" placeholder="8 (960) 900-60-90">
+          <input class="personal-info__input-phone" id="user-phone" type="text" name="phone" value=""
+            placeholder="8 (960) 900-60-90">
         </div>
         <div class="form__user-message user-message">
           <label class="user-message__label" for="user-message">Комментарий:</label>
