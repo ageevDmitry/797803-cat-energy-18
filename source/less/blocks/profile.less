@@ -1,13 +1,13 @@
 .profile {
   position: relative;
-  margin-top: 30px;
+  padding: 30px 0;
 
   &::before {
     content: "";
     position: absolute;
     width: 320px;
     height: 1px;
-    bottom: -25px;
+    bottom: 0px;
     left: -20px;
     background-color: @dark-grey;
 
@@ -17,7 +17,12 @@
   }
 
   @media @tablet-width {
-    margin: 30px 40px;
+    padding: 30px 40px;
+  }
+
+  @media @desktop-width {
+    width: 570px;
+    padding: 30px 0;
   }
 }
 
@@ -28,6 +33,18 @@
   font-family: @oswald;
   .text-properties(14px, 18px, 400);
   text-transform: uppercase;
+}
+
+.profile__list {
+  .list-style-default;
+}
+
+.profile__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .profile__label {

@@ -36,42 +36,53 @@
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
       <div class="form__center-wrapper">
         <h1 class="form__title">Подбор программы</h1>
-        <div class="form__profile profile">
-          <p class="profile__description">Заполните анкету и мы подберем
-            программу питания для вашего кота
-          </p>
-          <label class="profile__label" for="user-name">Имя*:
-            <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик">
-          </label>
-          <label class="profile__label" for="user-weight">Вес(кг):*
-            <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7">
-          </label>
-          <label class="profile__label" for="user-age">Возраст(лет):
-            <input class="profile__input" id="user-age" type="text" name="age" value="" placeholder="7">
-          </label>
-        </div>
-        <div class="form__program-categories program-categories">
-          <ul class="program-categories__list">
-            <li class="program-categories__item">
-              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="slim"
-                id="categories-slim" tabindex="0" aria-label="Похудение" checked>
-              <label class="program-categories__label" for="categories-slim">Похудение</label>
-            </li>
-            <li class="program-categories__item">
-              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="plump"
-                id="categories-plump" tabindex="0" aria-label="Похудение">
-              <label class="program-categories__label" for="categories-plump">Набор массы</label>
-            </li>
-            <li class="program-categories__item">
-              <input class="program-categories__input visually-hidden" type="radio" name="categories" value="dont-know"
-                id="categories-dont-know" tabindex="0" aria-label="Не знаю (нужен ваш совет)">
-              <label class="program-categories__label" for="categories-dont-know">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
+        <div class="form__profile-program-wrapper">
+          <div class="form__profile profile">
+            <p class="profile__description">Заполните анкету и мы подберем
+              программу питания для вашего кота
+            </p>
+            <ul class="profile__list">
+              <li class="profile__item">
+                <label class="profile__label" for="user-name">Имя*:
+                  <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик">
+                </label>
+              </li>
+              <li class="profile__item">
+                <label class="profile__label" for="user-weight">Вес(кг):*
+                  <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7">
+                </label>
+              </li>
+              <li class="profile__item">
+                <label class="profile__label" for="user-age">Возраст(лет):
+                  <input class="profile__input" id="user-age" type="text" name="age" value="" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form__program-categories program-categories">
+            <ul class="program-categories__list">
+              <li class="program-categories__item">
+                <input class="program-categories__input visually-hidden" type="radio" name="categories" value="slim"
+                  id="categories-slim" tabindex="0" aria-label="Похудение" checked>
+                <label class="program-categories__label" for="categories-slim">Похудение</label>
+              </li>
+              <li class="program-categories__item">
+                <input class="program-categories__input visually-hidden" type="radio" name="categories" value="plump"
+                  id="categories-plump" tabindex="0" aria-label="Похудение">
+                <label class="program-categories__label" for="categories-plump">Набор массы</label>
+              </li>
+              <li class="program-categories__item">
+                <input class="program-categories__input visually-hidden" type="radio" name="categories"
+                  value="dont-know" id="categories-dont-know" tabindex="0" aria-label="Не знаю (нужен ваш совет)">
+                <label class="program-categories__label" for="categories-dont-know">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="form__personal-info personal-info">
           <h2 class="personal-info__title">Контактные данные (владелец кота)</h2>
-          <label class="personal-info__label" for="user-mail"><nobr>E-mail*:</nobr><input class="personal-info__input" id="user-mail" type="text" name="mail" value=""
+          <label class="personal-info__label" for="user-mail">
+            <nobr>E-mail*:</nobr><input class="personal-info__input" id="user-mail" type="text" name="mail" value=""
               placeholder="kuklachev@gmail.com">
           </label>
           <label class="personal-info__label" for="user-phone">Вес(кг):*
@@ -81,29 +92,30 @@
         </div>
         <div class="form__user-message user-message">
           <h2 class="user-message__title">Комментарий</h2>
-          <textarea  class="user-message__text-area" id="user-message" name="message" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
+          <textarea class="user-message__text-area" id="user-message" name="message"
+            placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
         </div>
         <div class="form__additional-goods-chekbox additional-goods-chekbox">
           <h2 class="additional-goods-chekbox__title">Дополнительно</h2>
           <ul class="additional-goods-chekbox__list">
             <li class="additional-goods-chekbox__item">
-              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="sugar" id="good-sugar" tabindex="0"
-                aria-label="Сахарозаменитель" checked>
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="sugar"
+                id="good-sugar" tabindex="0" aria-label="Сахарозаменитель" checked>
               <label class="additional-goods-chekbox__label" for="good-sugar">Сахарозаменитель</label>
             </li>
             <li class="additional-goods-chekbox__item">
-              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="water" id="good-water" tabindex="0"
-                aria-label="Питьевая вода">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="water"
+                id="good-water" tabindex="0" aria-label="Питьевая вода">
               <label class="additional-goods-chekbox__label" for="good-water">Питьевая вода</label>
             </li>
             <li class="additional-goods-chekbox__item">
-              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="milk" id="good-milk" tabindex="0"
-                aria-label="Молоко">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="milk"
+                id="good-milk" tabindex="0" aria-label="Молоко">
               <label class="additional-goods-chekbox__label" for="good-milk">Молоко</label>
             </li>
             <li class="additional-goods-chekbox__item">
-              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="vitamins" id="good-vitamins"
-                tabindex="0" aria-label="Витамины">
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good"
+                value="vitamins" id="good-vitamins" tabindex="0" aria-label="Витамины">
               <label class="additional-goods-chekbox__label" for="good-vitamins">Витамины</label>
             </li>
           </ul>
