@@ -7,9 +7,10 @@
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 30px 20px 25px 20px;
-  background-color: @grey;
+  .center-wrapper;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: @white;
 
   @media @tablet-width {
     padding: 65px 70px 60px 70px;
@@ -22,7 +23,6 @@
     width: 570px;
     height: 200px;
     padding: 65px 70px 60px 70px;
-    background-color: @white;
     z-index: 1;
   }
 }
@@ -58,5 +58,12 @@
 
   @media @desktop-width {
     text-align: left;
+  }
+}
+
+.contacts__city {
+  @media @tablet-width {
+    display: block;
+    margin-top: 10px;
   }
 }

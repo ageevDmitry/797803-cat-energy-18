@@ -1,7 +1,7 @@
 .map {
   position: relative;
-  width: 320px;
-  min-height: 362px;
+  max-width: 320px;
+  margin: 0 auto;
 
   &::before {
     content: "";
@@ -16,18 +16,16 @@
   }
 
   @media @tablet-width {
-    width: 768px;
-    min-height: 396px;
+    max-width: 768px;
 
     &::before {
-      background-image: url("../img/map-pin.png");
       width: 124px;
       height: 106px;
+      background-image: url("../img/map-pin.png");
     }
   }
 
   @media @desktop-width {
-    width: 1300px;
-    min-height: 396px;
+    max-width: 1300px;
   }
 }

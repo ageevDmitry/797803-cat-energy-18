@@ -1,0 +1,35 @@
+.toggle {
+  display: block;
+  width: 24px;
+  height: 18px;
+  margin: 23px 0 20px auto;
+  padding: 0;
+  background-color: @white;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+
+  @media @tablet-width {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+    width: 24px;
+    height: 18px;
+    margin: 23px 0 20px auto;
+    padding: 0;
+    background-color: @white;
+    background-image: url("../img/icon-close.svg");
+    background-position: 3px 0;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
+}

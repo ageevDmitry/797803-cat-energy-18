@@ -1,10 +1,29 @@
 .profile {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 20px 30px 20px;
-  border-bottom: 1px solid @dark-grey;
+  position: relative;
+  padding: 30px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: -20px;
+    background-color: @dark-grey;
+
+    @media @tablet-width {
+      display: none;
+    }
+  }
+
+  @media @tablet-width {
+    padding: 30px 40px;
+  }
+
+  @media @desktop-width {
+    width: 570px;
+    padding: 30px 0;
+  }
 }
 
 .profile__description {
@@ -16,64 +35,22 @@
   text-transform: uppercase;
 }
 
-.profile__label-name {
-  display: block;
-  width: 50px;
-  margin-top: 15px;
-  font-family: @oswald;
-  .text-properties(16px, 18px, 400);
-  text-transform: uppercase;
+.profile__list {
+  .list-style-default;
 }
 
-.profile__input-name {
-  display: block;
-  width: 229px;
-  height: 45px;
-  padding: 0 15px;
-  font-family: @oswald;
-  .text-properties(16px, 18px, 400);
-  text-transform: uppercase;
-  border: 1px solid @dark-grey;
+.profile__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.profile__label-weight {
-  display: block;
-  width: 60px;
-  margin-top: 25px;
-  font-family: @oswald;
-  .text-properties(16px, 18px, 400);
-  text-transform: uppercase;
+.profile__label {
+  .form-label;
 }
 
-.profile__input-weight {
-  display: block;
-  width: 204px;
-  height: 45px;
-  margin-top: 14px;
-  padding: 0 15px;
-  font-family: @oswald;
-  .text-properties(16px, 18px, 400);
-  text-transform: uppercase;
-  border: 1px solid @dark-grey;
-}
-
-.profile__label-age {
-  display: block;
-  width: 95px;
-  margin-top: 25px;
-  font-family: @oswald;
-  .text-properties(16px, 18px, 400);
-  text-transform: uppercase;
-}
-
-.profile__input-age {
-  display: block;
-  width: 172px;
-  height: 45px;
-  margin-top: 14px;
-  padding: 0 15px;
-  font-family: @oswald;
-  .text-properties(16px, 18px, 400);
-  text-transform: uppercase;
-  border: 1px solid @dark-grey;
+.profile__input {
+  .form__input;
 }
