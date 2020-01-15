@@ -141,44 +141,33 @@
 }
 
 .slider-cat__toggle {
+  @media @tablet-width {
+    position: absolute;
+    top: -13px;
+    left: 200px;
+    width: 34px;
+    height: 34px;
+    background-color: @white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-image: url("../img/toggle-green-point.png");
+    background-repeat: no-repeat;
+    background-position: 13px 13px;
+    z-index: 2;
 
+    &:hover {
+      background-position: 12px 12px;
+      border: 1px solid @dark-grey;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      background-position: 11px 11px;
+      border: 2px solid @little-green;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
 }
-
-  // @media @tablet-width {
-
-  //   &::before {
-  //     top: -5px;
-  //     left: 336px;
-  //     width: 34px;
-  //     height: 34px;
-  //     background-color: @white;
-  //     border-radius: 50%;
-  //     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-  //     z-index: 2;
-  //   }
-
-  //   &:hover::before {
-  //     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
-  //   }
-
-  //   &:active::before {
-  //     border: 2px solid @little-green;
-  //     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-  //   }
-
-  //   &::after {
-  //     top: 8px;
-  //     left: 349px;
-  //     width: 8px;
-  //     height: 8px;
-  //     background-color: @little-green;
-  //     border-radius: 50%;
-  //     z-index: 3;
-  //   }
-  // }
-
-
-
 
 @media (max-width: @mobile-width-only) {
 
@@ -190,27 +179,27 @@
     margin-right: 30px;
   }
 
-  #cat-one:checked ~ .slider-cat__img-before-mobile {
+  #cat-one:checked~.slider-cat__img-before-mobile {
     display: block;
   }
 
-  #cat-one:checked ~ .slider-cat__img-after-mobile {
+  #cat-one:checked~.slider-cat__img-after-mobile {
     display: none;
   }
 
-  #cat-one:checked ~ .slider-cat__controls::after {
+  #cat-one:checked~.slider-cat__controls::after {
     left: 107px;
   }
 
-  #cat-two:checked ~ .slider-cat__img-before-mobile {
+  #cat-two:checked~.slider-cat__img-before-mobile {
     display: none;
   }
 
-  #cat-two:checked ~ .slider-cat__img-after-mobile {
+  #cat-two:checked~.slider-cat__img-after-mobile {
     display: block;
   }
 
-  #cat-two:checked ~ .slider-cat__controls::after {
+  #cat-two:checked~.slider-cat__controls::after {
     left: 142px;
   }
 }
