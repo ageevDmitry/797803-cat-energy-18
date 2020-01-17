@@ -1,5 +1,15 @@
 .map {
   position: relative;
+}
+
+.map__google-map {
+  position: absolute;
+  z-index: 3;
+  border: none;
+}
+
+.map__center-wrapper {
+  position: relative;
   max-width: 320px;
   margin: 0 auto;
 
@@ -19,6 +29,10 @@
   @media @tablet-width {
     width: 767px;
   }
+
+  @media @desktop-width {
+    width: 1300px;
+  }
 }
 
 .map__pointer {
@@ -27,11 +41,17 @@
   left: 135px;
   width: 55px;
   height: 53px;
+  z-index: 2;
 
   @media @tablet-width {
     top: 150px;
     left: 340px;
     width: 113px;
     height: 106px;
+  }
+
+  @media @desktop-width {
+    top: 151px;
+    left: 906px;
   }
 }

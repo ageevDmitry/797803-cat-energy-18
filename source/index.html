@@ -159,16 +159,22 @@
         </div>
       </div>
       <div class="contacts__map map">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-          <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
-            height="400" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
-        </picture>
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/map-pin.png">
-          <img class="map__pointer" src="img/map-pin2.png" width="55" height="53" alt="Указатель">
-        </picture>
+        <iframe class="map__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          width="100%" height="400" allowfullscreen>
+        </iframe>
+        <div class="map__center-wrapper">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+            <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
+              height="400" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-pin.png">
+            <img class="map__pointer" src="img/map-pin2.png" width="55" height="53" alt="Указатель">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
