@@ -3,18 +3,6 @@
   max-width: 320px;
   margin: 0 auto;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 180px;
-    left: 135px;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/map-pin2.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   @media @tablet-width {
     max-width: 768px;
 
@@ -28,4 +16,20 @@
   @media @desktop-width {
     max-width: 1300px;
   }
+}
+
+.map__img {
+  width: 320px;
+  height: 400px;
+}
+
+.map__pointer {
+  position: absolute;
+  top: 180px;
+  left: 135px;
+  width: 55px;
+  height: 53px;
+  background-image: url("../img/map-pin2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
