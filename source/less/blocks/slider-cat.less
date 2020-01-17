@@ -1,15 +1,5 @@
 .slider-cat {
-  position: relative;
-  max-width: 320px;
-  margin: 0 auto;
-
-  @media @tablet-width {
-    max-width: 768px;
-  }
-
-  @media @desktop-width {
-    width: 690px;
-  }
+padding-bottom: 15px;
 }
 
 .slider-cat__wrapper {
@@ -21,6 +11,11 @@
   @media @tablet-width {
     padding: 33px 46px 0 46px;
   }
+
+  @media @desktop-width {
+    width: 650px;
+    padding: 0;
+  }
 }
 
 .sliper-cat__img-before-wrapper {
@@ -29,6 +24,10 @@
   @media @tablet-width {
     width: 338px;
     overflow: hidden;
+  }
+
+  @media @desktop-width {
+    width: 325px;
   }
 }
 
@@ -40,6 +39,10 @@
     width: 338px;
     overflow: hidden;
   }
+
+  @media @desktop-width {
+    width: 325px;
+  }
 }
 
 .sliper-cat__img-before {
@@ -48,6 +51,11 @@
     width: 708px;
     height: 516px;
     transform: translate(5px, 4px);
+  }
+
+  @media @desktop-width {
+    width: 650px;
+    transform: translate(-22px, 17px);
   }
 }
 
@@ -58,8 +66,12 @@
     height: 516px;
     transform: translate(-330px, 4px);
   }
-}
 
+  @media @desktop-width {
+    width: 650px;
+    transform: translate(-341px, 16px);
+  }
+}
 
 .slider-cat__img-container {
   display: flex;
@@ -93,6 +105,10 @@
 
   @media @tablet-width {
     padding: 19px 99px 20px 98px;
+  }
+
+  @media @desktop-width {
+    padding: 54px 41px 20px 39px;
   }
 }
 
@@ -136,6 +152,11 @@
     background-color: @dark-grey;
     border-radius: 2px;
   }
+
+  @media @desktop-width {
+    top: 60px;
+    left: 110px;
+  }
 }
 
 .slider-cat__toggle {
@@ -173,3 +194,43 @@
     }
   }
 }
+
+// .slider-cat__background-wrapper-left {
+//   display: none;
+
+//   @media @tablet-width {
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 462px;
+//     background-color: #f2f2f2;
+//     transform: translateX(-50%);
+//   }
+
+//   @media @desktop-width {
+//     width: 325px;
+//     left: 650px;
+//     transform: none;
+//   }
+// }
+
+// .slider-cat__background-wrapper-right {
+//   display: none;
+
+//   @media @tablet-width {
+//     display: block;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 462px;
+//     background-color: #eaeaea;
+//     transform: translateX(50%);
+//   }
+
+//   @media @desktop-width {
+//     left: 25%;
+//   }
+// }
