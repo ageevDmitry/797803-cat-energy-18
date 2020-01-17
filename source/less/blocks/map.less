@@ -5,12 +5,6 @@
 
   @media @tablet-width {
     max-width: 768px;
-
-    &::before {
-      width: 124px;
-      height: 106px;
-      background-image: url("../img/map-pin.png");
-    }
   }
 
   @media @desktop-width {
@@ -21,6 +15,10 @@
 .map__img {
   width: 320px;
   height: 400px;
+
+  @media @tablet-width {
+    width: 767px;
+  }
 }
 
 .map__pointer {
@@ -29,7 +27,11 @@
   left: 135px;
   width: 55px;
   height: 53px;
-  background-image: url("../img/map-pin2.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+
+  @media @tablet-width {
+    top: 150px;
+    left: 340px;
+    width: 113px;
+    height: 106px;
+  }
 }
