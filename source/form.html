@@ -47,17 +47,17 @@
             </p>
             <ul class="profile__list">
               <li class="profile__item">
-                <label class="profile__label" for="user-name">Имя*:
-                  <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик">
+                <label class="profile__label">Имя*:
+                  <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик" required>
                 </label>
               </li>
               <li class="profile__item">
-                <label class="profile__label" for="user-weight">Вес(кг):*
-                  <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7">
+                <label class="profile__label">Вес(кг):*
+                  <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7" required>
                 </label>
               </li>
               <li class="profile__item">
-                <label class="profile__label" for="user-age">Возраст(лет):
+                <label class="profile__label">Возраст(лет):
                   <input class="profile__input" id="user-age" type="text" name="age" value="" placeholder="7">
                 </label>
               </li>
@@ -84,19 +84,19 @@
           </div>
         </div>
         <div class="form__personal-info personal-info">
-          <h2 class="personal-info__title">Контактные данные (владелец кота)</h2>
+          <h2 class="personal-info__title">Контактные данные (владелеца кота)</h2>
           <ul class="personal-info__list">
             <li class="personal-info__item">
-              <label class="personal-info__label" for="user-mail">
-                <nobr>E-mail*:</nobr>
-                <input class="personal-info__input" id="user-mail" type="text" name="mail" value=""
-                  placeholder="kuklachev@gmail.com">
+              <label class="personal-info__label personal-info__label--mail">
+                E&#8209;mail:*
+                <input class="personal-info__input" id="user-mail" type="email" name="mail" value=""
+                  placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="personal-info__item">
-              <label class="personal-info__label" for="user-phone">Вес(кг):*
-                <input class="personal-info__input" id="user-phone" type="text" name="phone" value=""
-                  placeholder="8 (960) 900-60-90">
+              <label class="personal-info__label personal-info__label--phone">Телефон:*
+                <input class="personal-info__input" id="user-phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" value=""
+                  placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
@@ -134,7 +134,7 @@
         <div class="form__button-info-wrapper">
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__field-info">
-            * - Обязательные поля
+            * — Обязательные поля
           </p>
         </div>
       </div>
