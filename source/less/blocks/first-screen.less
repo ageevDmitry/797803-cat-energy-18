@@ -1,7 +1,7 @@
 .first-screen__center-wrapper {
   position: relative;
   .center-wrapper;
-  padding-top: 28px;
+  padding-top: 27px;
 
   &::before {
     content: "";
@@ -27,11 +27,16 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: -2;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 
   @media @tablet-width {
-    min-height: 850px;
-    padding-top: 40px;
+    min-height: 864px;
+    padding-top: 54px;
     background-image: none;
 
     &::before {
@@ -44,8 +49,8 @@
   }
 
   @media @desktop-width {
-    min-height: 606px;
-    padding-top: 80px;
+    min-height: 580px;
+    padding-top: 105px;
 
     &::before {
       display: block;
@@ -53,11 +58,11 @@
       position: absolute;
       width: 50%;
       height: 696px;
-      top: -90px;
+      top: -117px;
       right: 0;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: center right;
       z-index: -1;
     }
 
@@ -65,10 +70,10 @@
       display: block;
       content: "";
       position: absolute;
-      width: 50vw;
+      width: 100vw;
       height: 696px;
-      top: -90px;
-      right: -650px;
+      top: -117px;
+      left: 50%;
       background-color: #64a83b;
       background-image: none;
       z-index: -2;
@@ -84,7 +89,7 @@
   text-align: center;
 
   @media @tablet-width {
-    margin: 0 222px 0 90px;
+    margin: 0 206px 0 87px;
     .text-properties(60px, 60px, 400);
     color: @black;
     text-align: left;
@@ -97,7 +102,7 @@
 
 .first-screen__slogan {
   display: block;
-  margin-top: 15px;
+  margin-top: 25px;
   font-family: @oswald;
   .text-properties(14px, 14px, 400);
   text-transform: uppercase;
@@ -105,42 +110,48 @@
   text-align: center;
 
   @media @tablet-width {
-    margin: 45px 222px 0 90px;
+    margin: 41px 222px 0 88px;
     .text-properties(20px, 20px, 400);
     color: @black;
     text-align: left;
   }
 
   @media @desktop-width {
-    margin: 30px 650px 0 80px;
+    margin: 42px 650px 0 80px;
   }
 }
 
 .first-screen__img {
   position: absolute;
-  top: 165px;
-  right: 14px;
+  width: 280px;
+  height: 271px;
+  top: 166px;
+  right: 20px;
   z-index: -1;
 
   @media @tablet-width {
-    top: 320px;
-    right: 210px;
+    width: 709px;
+    height: 609px;
+    top: 255px;
+    right: 30px;
   }
 
   @media @desktop-width {
-    top: 165px;
-    right: 500px;
+    width: 552px;
+    height: 499px;
+    top: 25px;
+    right: 258px;
   }
 }
 
 .first-screen__choose-program {
-  margin-top: 312px;
+  margin-top: 302px;
 
   @media @tablet-width {
-    margin: 50px 374px 0 90px;
+    margin: 48px 374px 0 89px;
   }
 
   @media @desktop-width {
-    margin: 50px 650px 0 80px;
+    margin: 52px 650px 0 80px;
   }
 }

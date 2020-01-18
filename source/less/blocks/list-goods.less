@@ -15,7 +15,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 0 35px 0;
+  padding-bottom: 25px;
   position: relative;
 
   &::before {
@@ -36,9 +36,8 @@
     flex-direction: column;
     align-items: center;
     width: 324px;
-    min-height: 508px;
-    margin-top: 40px;
-    padding: 30px 37px 40px 37px;
+    margin-top: 60px;
+    padding-bottom: 40px;
     border: none;
 
     &::after {
@@ -55,8 +54,8 @@
 
   @media @desktop-width {
     width: 245px;
-    min-height: 515px;
-    padding: 30px 37px 40px 37px;
+    margin-top: 64px;
+    padding-bottom: 40px;
 
     &::after {
       width: 245px;
@@ -66,20 +65,27 @@
 }
 
 .list-goods__img-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 140px;
-  min-height: 125px;
+  height: 144px;
 
   @media @tablet-width {
+    display: flex;
+    justify-content: center;
     align-items: flex-end;
-    width: 250px;
+    width: 324px;
     min-height: 208px;
   }
 
   @media @desktop-width {
-    width: 170px;
+    width: 245px;
+  }
+}
+
+.list-goods__image {
+  width: 140px;
+
+  @media @tablet-width {
+    width: 324px;
   }
 }
 
@@ -97,14 +103,15 @@
 }
 
 .list-goods__title {
-  margin: 0;
+  margin: 20px 0 0 0;
   width: 90px;
   font-family: @oswald;
   .text-properties(16px, 20px, 400);
   text-transform: uppercase;
 
   @media @tablet-width {
-    margin: 50px auto 0 auto;
+    width: 150px;
+    margin: 33px auto 0 auto;
     text-align: center;
     .text-properties(20px, 20px, 400);
   }
@@ -112,8 +119,16 @@
 
 .list-goods__info-goods {
   width: 100%;
-  margin-top: 18px;
+  margin-top: 12px;
   border-collapse: collapse;
+
+  @media @tablet-width {
+    margin-top: 21px;
+  }
+
+  @media @desktop-width {
+    margin-top: 19px;
+  }
 }
 
 .list-goods__field {
@@ -121,8 +136,13 @@
   .text-properties(12px, 16px, 400);
 
   @media @tablet-width {
+    padding: 8px 0 6px 0;
     .text-properties(16px, 16px, 400);
     border-bottom: 1px solid @dark-grey;
+  }
+
+  @media @desktop-width {
+    text-align: left;
   }
 }
 
@@ -132,21 +152,26 @@
   text-align: right;
 
   @media @tablet-width {
+    padding: 8px 0 6px 0;
     .text-properties(16px, 16px, 400);
     border-bottom: 1px solid @dark-grey;
+  }
+
+  @media @desktop-width {
+    text-align: right;
   }
 }
 
 .list-goods__link {
   width: 280px;
-  margin-top: 20px;
 
   @media @tablet-width {
-    width: 250px;
+    margin-top: 34px;
+    width: 249px;
   }
 
   @media @desktop-width {
-    width: 170px;
-    margin-top: 27px;
+    width: 169px;
+    margin-top: 36px;
   }
 }
