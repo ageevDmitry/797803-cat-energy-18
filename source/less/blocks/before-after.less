@@ -1,5 +1,10 @@
 .before-after {
   position: relative;
+  overflow: hidden;
+}
+
+.before-after__wrapper {
+  position: relative;
   background-color: @grey;
 
   @media @tablet-width {
@@ -21,17 +26,17 @@
       display: block;
       position: absolute;
       bottom: 0;
-      left: 0;
+      right: 325px;
       width: 100vw;
       height: 462px;
-      background-color: #f2f2f2;
-      transform: translateX(-50%);
+      background-color: @grey;
     }
   }
 }
 
 .before-after__center-wrapper {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
