@@ -3,7 +3,7 @@
   padding-top: 30px;
 
   @media @tablet-width {
-    padding: 30px 40px;
+    padding: 32px 39px;
   }
 
   @media @desktop-width {
@@ -15,7 +15,6 @@
   position: relative;
   width: 230px;
   margin: 0;
-  margin-bottom: 34px;
   font-family: @oswald;
   .text-properties(24px, 24px, 400);
 
@@ -28,11 +27,18 @@
     right: -70px;
     background-color: @little-green;
   }
+
+  @media @tablet-width {
+    @media @tablet-width {
+      .text-properties(36px, 36px, 400);
+    }
+  }
 }
 
 .user-message__text-area {
   width: 100%;
   min-height: 150px;
+  margin-top: 34px;
   padding: 12px;
   font-family: @oswald;
   .text-properties(16px, 18px, 400);
@@ -48,5 +54,16 @@
     outline: 0;
     padding: 11px;
     border: 2px solid @black;
+  }
+
+  @media @tablet-width {
+    min-height: 174px;
+    margin-top: 76px;
+    padding: 9px 19px 14px 19px;
+    .text-properties(20px, 30px, 400);
+
+    &:focus {
+      padding: 8px 18px 13px 18px;
+    }
   }
 }

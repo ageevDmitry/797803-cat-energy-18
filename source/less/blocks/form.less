@@ -2,6 +2,11 @@
   .center-wrapper;
   padding-top: 19px;
   padding-bottom: 15px;
+
+  @media @tablet-width {
+    padding-top: 53px;
+    padding-bottom: 15px;
+  }
 }
 
 .form__profile-program-wrapper {
@@ -19,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30px 40px;
+    padding: 14px 41px;
   }
 
   @media @desktop-width {
@@ -46,6 +51,10 @@
       display: none;
     }
   }
+
+  @media @tablet-width {
+    .text-properties(60px, 60px, 400);
+  }
 }
 
 .form__button {
@@ -55,6 +64,8 @@
   @media @tablet-width {
     width: 283px;
     margin-top: 0;
+    padding: 16px 20px 16px 20px;
+    .text-properties(20px, 20px, 400);
   }
 
   @media @desktop-width {
@@ -71,7 +82,8 @@
 
   @media @tablet-width {
     width: 283px;
-    margin-top: 10px;
+    margin-top: 16px;
+    .text-properties(16px, 16px, 400);
     text-align: left;
   }
 

@@ -3,7 +3,7 @@
   padding-top: 28px;
 
   @media @tablet-width {
-    padding: 30px 40px;
+    padding: 33px 35px 33px 39px;
   }
 
   @media @desktop-width {
@@ -15,7 +15,6 @@
   position: relative;
   width: 230px;
   margin: 0;
-  margin-bottom: 33px;
   font-family: @oswald;
   .text-properties(24px, 24px, 400);
 
@@ -28,10 +27,20 @@
     right: -70px;
     background-color: @little-green;
   }
+
+  @media @tablet-width {
+    width: 530px;
+    .text-properties(36px, 36px, 400);
+  }
 }
 
 .personal-info__list {
   .list-style-default;
+  margin-top: 33px;
+
+  @media @tablet-width {
+    margin-top: 76px;
+  }
 
   @media @desktop-width {
     display: flex;
@@ -46,6 +55,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media @tablet-width {
+    margin-bottom: 20px;
   }
 
   @media @desktop-width {
@@ -70,6 +83,13 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+
+    @media @tablet-width {
+      &::after {
+        top: 20px;
+        right: 21px;
+      }
+    }
   }
 
   &--phone {
@@ -83,6 +103,13 @@
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+
+    @media @tablet-width {
+      &::after {
+        top: 17px;
+        right: 18px;
+      }
     }
   }
 }

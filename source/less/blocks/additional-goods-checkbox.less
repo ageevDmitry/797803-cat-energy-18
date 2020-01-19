@@ -3,7 +3,7 @@
   padding-top: 24px;
 
   @media @tablet-width {
-    padding: 30px 40px;
+    padding: 29px 40px 0 39px;
   }
 
   @media @desktop-width {
@@ -15,7 +15,6 @@
   position: relative;
   width: 230px;
   margin: 0;
-  margin-bottom: 41px;
   font-family: @oswald;
   .text-properties(24px, 24px, 400);
 
@@ -28,6 +27,10 @@
     right: -70px;
     background-color: @little-green;
   }
+
+  @media @tablet-width {
+    .text-properties(36px, 36px, 400);
+  }
 }
 
 .additional-goods-chekbox__list {
@@ -38,6 +41,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 66px;
   }
 }
 
@@ -49,7 +53,8 @@
   }
 
   @media @tablet-width {
-    width: 269px;
+    width: 226px;
+    margin: 0px 0 49px 59px;
   }
 
   @media @desktop-width {
@@ -67,9 +72,13 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media @tablet-width {
+    .text-properties(20px, 20px, 400);
+  }
 }
 
-.additional-goods-chekbox__input + .additional-goods-chekbox__label::before {
+.additional-goods-chekbox__input+.additional-goods-chekbox__label::before {
   display: block;
   content: "";
   position: absolute;
@@ -79,9 +88,16 @@
   height: 31px;
   border: 1px solid @dark-grey;
   cursor: pointer;
+
+  @media @tablet-width {
+    top: -4px;
+    left: -58px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.additional-goods-chekbox__input:checked + .additional-goods-chekbox__label::after {
+.additional-goods-chekbox__input:checked+.additional-goods-chekbox__label::after {
   display: block;
   content: "";
   position: absolute;
@@ -93,17 +109,22 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   border-radius: 50%;
+
+  @media @tablet-width {
+    top: 7px;
+    left: -49px;
+  }
 }
 
-.additional-goods-chekbox__input:hover + .additional-goods-chekbox__label::before {
-  border: 1px solid @dark-grey;
+.additional-goods-chekbox__input:hover+.additional-goods-chekbox__label::before {
+  border: 1px solid #cfcfcf;
 }
 
-.additional-goods-chekbox__input:active + .additional-goods-chekbox__label::before {
+.additional-goods-chekbox__input:active+.additional-goods-chekbox__label::before {
   border: 1px solid @dark-grey;
   opacity: 0.3;
 }
 
-.additional-goods-chekbox__input:active + .additional-goods-chekbox__label::after {
+.additional-goods-chekbox__input:active+.additional-goods-chekbox__label::after {
   opacity: 0.3;
 }

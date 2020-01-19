@@ -35,6 +35,10 @@
   font-family: @oswald;
   .text-properties(16px, 18px, 400);
   text-transform: uppercase;
+
+  @media @tablet-width {
+    .text-properties(20px, 20px, 400);
+  }
 }
 
 .form__input() {
@@ -60,5 +64,25 @@
   &:invalid {
     padding: 0 37px 0 14px;
     border: 2px solid @pink;
+  }
+
+  @media @tablet-width {
+    height: 52px;
+    margin-left: 25px;
+    padding: 8px 38px 12px 15px;
+    .text-properties(20px, 20px, 400);
+
+    &:hover {
+      padding: 8px 38px 12px 15px;
+    }
+
+    &:focus {
+      padding: 7px 37px 11px 14px;
+    }
+
+    &:invalid {
+      padding: 7px 37px 11px 14px;
+    }
+
   }
 }
