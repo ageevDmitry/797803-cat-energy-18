@@ -1,8 +1,14 @@
 .address {
+  position: relative;
   background-color: @grey;
 
   &--index {
     background-color: @white;
+  }
+
+  @media @desktop-width {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
 
