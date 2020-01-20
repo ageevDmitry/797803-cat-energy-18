@@ -1,8 +1,14 @@
 .address {
+  position: relative;
   background-color: @grey;
 
   &--index {
     background-color: @white;
+  }
+
+  @media @desktop-width {
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
 
@@ -16,7 +22,7 @@
   padding-bottom: 26px;
 
   @media @tablet-width {
-    padding: 97px 70px 60px 70px;
+    padding: 65px 70px 60px 70px;
   }
 
   @media @desktop-width {

@@ -9,7 +9,7 @@
     width: 320px;
     height: 305px;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: @little-green;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -22,7 +22,7 @@
     width: 320px;
     height: 305px;
     top: 0;
-    right: 0;
+    left: 0;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -56,23 +56,28 @@
       display: block;
       content: "";
       position: absolute;
-      width: 50%;
+      width: 720px;
       height: 696px;
-      top: -117px;
-      right: 0;
+      top: -118px;
+      left: 651px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-position: center right;
+      background-position: center left;
       z-index: -1;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
 
     &::after {
       display: block;
       content: "";
       position: absolute;
-      width: 100vw;
+      width: calc(50vw - 15px);
       height: 696px;
-      top: -117px;
+      top: -118px;
       left: 50%;
       background-color: #64a83b;
       background-image: none;
@@ -82,6 +87,7 @@
 }
 
 .first-screen__title {
+  width: 280px;
   margin: 0;
   font-family: @oswald;
   .text-properties(36px, 36px, 400);
@@ -89,6 +95,7 @@
   text-align: center;
 
   @media @tablet-width {
+    width: 427px;
     margin: 0 206px 0 87px;
     .text-properties(60px, 60px, 400);
     color: @black;

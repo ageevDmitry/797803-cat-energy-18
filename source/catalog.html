@@ -264,7 +264,7 @@
     </section>
     <section class="catalog-additional-goods">
       <div class="catalog-additional-goods__center-wrapper">
-        <h2 class="catalog-additional-goods__title"><span class="catalog-goods__title-wrapper">Дополнительные товары</span></h2>
+        <h2 class="catalog-additional-goods__title"><span class="catalog-additional-goods__title-wrapper">Дополнительные товары</span></h2>
         <ul class="catalog-additional-goods__list additional-goods-list">
           <li class="additional-goods-list__item">
             <h3 class="additional-goods-list__title">Сахарозаменитель</h3>
@@ -314,13 +314,31 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="contacts__address">ул. Большая Конюшенная, д.19/8, г. Санкт-Петербург</address>
+      <div class="contacts__address address">
+        <div class="address__wrapper">
+          <b class="address__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <address class="address__street-house">ул. Большая Конюшенная, д.&nbsp;19/8
+            <span class="address__city">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="contacts__map map">
-        <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="362"
-          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <iframe class="map__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          allowfullscreen>
+        </iframe>
+        <div class="map__center-wrapper">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+            <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
+              height="362" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-pin-tablet.png">
+            <img class="map__pointer" src="img/map-pin-mobile.png" width="55" height="53" alt="Указатель">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
@@ -331,17 +349,17 @@
       </a>
       <ul class="footer__social-media-list social-media-list">
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#">
+          <a class="social-media-list__link social-media-list__link--vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#">
+        <li class="social-media-list__item ">
+          <a class="social-media-list__link social-media-list__link--insta" href="#">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#">
+          <a class="social-media-list__link social-media-list__link--fb" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
@@ -357,6 +375,7 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,21 @@
+.form {
+  overflow: hidden;
+}
+
 .form__center-wrapper {
   .center-wrapper;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+
+  @media @tablet-width {
+    padding-top: 54px;
+    padding-bottom: 15px;
+  }
+
+  @media @desktop-width {
+    padding-top: 71px;
+    padding-bottom: 15px;
+  }
 }
 
 .form__profile-program-wrapper {
@@ -19,11 +33,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30px 40px;
+    padding: 14px 41px;
   }
 
   @media @desktop-width {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 }
 
@@ -31,7 +45,7 @@
   position: relative;
   margin: 0;
   font-family: @oswald;
-  .text-properties(36px, 60px, 400);
+  .text-properties(36px, 51px, 400);
 
   &::before {
     content: "";
@@ -46,15 +60,21 @@
       display: none;
     }
   }
+
+  @media @tablet-width {
+    .text-properties(60px, 60px, 400);
+  }
 }
 
 .form__button {
   width: 280px;
-  margin-top: 20px;
+  margin-top: 39px;
 
   @media @tablet-width {
     width: 283px;
     margin-top: 0;
+    padding: 16px 20px 16px 20px;
+    .text-properties(20px, 20px, 400);
   }
 
   @media @desktop-width {
@@ -71,7 +91,8 @@
 
   @media @tablet-width {
     width: 283px;
-    margin-top: 10px;
+    margin-top: 16px;
+    .text-properties(16px, 16px, 400);
     text-align: left;
   }
 

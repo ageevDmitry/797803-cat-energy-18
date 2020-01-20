@@ -1,8 +1,14 @@
 .slider-cat {
+  position: relative;
+  margin-top: auto;
   padding-bottom: 15px;
+
+  @media @tablet-width {
+    padding-bottom: 47px;
+  }
 }
 
-.slider-cat__wrapper {
+.slider-cat__img-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,6 +27,26 @@
 .sliper-cat__img-before-wrapper {
   display: block;
 
+  &:before {
+    @media @tablet-width {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 462px;
+      background-color: @grey;
+      transform: translateX(-50%);
+    }
+
+    @media @desktop-width {
+      left: 0;
+      width: 325px;
+      transform: none;
+    }
+  }
+
   @media @tablet-width {
     width: 338px;
     overflow: hidden;
@@ -33,6 +59,23 @@
 
 .sliper-cat__img-after-wrapper {
   display: none;
+
+  &:before {
+    @media @tablet-width {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 384px;
+      width: 100vw;
+      height: 462px;
+      background-color: #eaeaea;
+    }
+
+    @media @desktop-width {
+      left: 325px;
+    }
+  }
 
   @media @tablet-width {
     display: block;
@@ -123,10 +166,10 @@
     display: block;
     padding-bottom: 7px;
     .text-properties(20px, 20px, 400);
-    border-bottom: 1px dotted @dark-grey;
+    border-bottom: 1px dotted #bababa;
 
     &:hover {
-      border-bottom: 1px solid @dark-grey;
+      border-bottom: 1px solid #989898;
     }
 
     &:active {
@@ -192,45 +235,5 @@
       border: 2px solid @little-green;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
-  }
-}
-
-.slider-cat__background-wrapper-left {
-  display: none;
-
-  @media @tablet-width {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 462px;
-    background-color: #f2f2f2;
-    transform: translateX(-50%);
-  }
-
-  @media @desktop-width {
-    width: 325px;
-    left: 650px;
-    transform: none;
-  }
-}
-
-.slider-cat__background-wrapper-right {
-  display: none;
-
-  @media @tablet-width {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 462px;
-    background-color: #eaeaea;
-    transform: translateX(50%);
-  }
-
-  @media @desktop-width {
-    left: 25%;
   }
 }

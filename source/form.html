@@ -30,7 +30,7 @@
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" >Подбор программы</a>
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -47,17 +47,17 @@
             </p>
             <ul class="profile__list">
               <li class="profile__item">
-                <label class="profile__label" for="user-name">Имя*:
-                  <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик">
+                <label class="profile__label">Имя:*
+                  <input class="profile__input" id="user-name" type="text" name="login" value="" placeholder="Барсик" required>
                 </label>
               </li>
               <li class="profile__item">
-                <label class="profile__label" for="user-weight">Вес(кг):*
-                  <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7">
+                <label class="profile__label">Вес&nbsp;(кг):*
+                  <input class="profile__input" id="user-weight" type="text" name="weight" value="" placeholder="7" required>
                 </label>
               </li>
               <li class="profile__item">
-                <label class="profile__label" for="user-age">Возраст(лет):
+                <label class="profile__label">Возраст&nbsp;(лет):
                   <input class="profile__input" id="user-age" type="text" name="age" value="" placeholder="7">
                 </label>
               </li>
@@ -84,30 +84,30 @@
           </div>
         </div>
         <div class="form__personal-info personal-info">
-          <h2 class="personal-info__title">Контактные данные (владелец кота)</h2>
+          <h2 class="personal-info__title"><span class="personal-info__title-wrapper">Контактные данные (владельца кота)</span></h2>
           <ul class="personal-info__list">
             <li class="personal-info__item">
-              <label class="personal-info__label" for="user-mail">
-                <nobr>E-mail*:</nobr>
-                <input class="personal-info__input" id="user-mail" type="text" name="mail" value=""
-                  placeholder="kuklachev@gmail.com">
+              <label class="personal-info__label personal-info__label--mail">
+                E&#8209;mail:*
+                <input class="personal-info__input" id="user-mail" type="email" name="mail" value=""
+                  placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="personal-info__item">
-              <label class="personal-info__label" for="user-phone">Вес(кг):*
-                <input class="personal-info__input" id="user-phone" type="text" name="phone" value=""
-                  placeholder="8 (960) 900-60-90">
+              <label class="personal-info__label personal-info__label--phone">Телефон:*
+                <input class="personal-info__input" id="user-phone" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone" value=""
+                  placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </div>
         <div class="form__user-message user-message">
-          <h2 class="user-message__title">Комментарий</h2>
+          <h2 class="user-message__title"><span class="user-message__title-wrapper">Комментарий</span></h2>
           <textarea class="user-message__text-area" id="user-message" name="message"
             placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
         </div>
         <div class="form__additional-goods-chekbox additional-goods-chekbox">
-          <h2 class="additional-goods-chekbox__title">Дополнительно</h2>
+          <h2 class="additional-goods-chekbox__title"><span class="additional-goods-chekbox__title-wrapper">Дополнительно</span></h2>
           <ul class="additional-goods-chekbox__list">
             <li class="additional-goods-chekbox__item">
               <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="sugar"
@@ -134,20 +134,38 @@
         <div class="form__button-info-wrapper">
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__field-info">
-            * - Обязательные поля
+            * — Обязательные поля
           </p>
         </div>
       </div>
     </form>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
-        <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="contacts__address">ул. Большая Конюшенная, д.19/8, г. Санкт-Петербург</address>
+      <div class="contacts__address address">
+        <div class="address__wrapper">
+          <b class="address__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <address class="address__street-house">ул. Большая Конюшенная, д.&nbsp;19/8
+            <span class="address__city">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
       <div class="contacts__map map">
-        <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="362"
-          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <iframe class="map__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          allowfullscreen>
+        </iframe>
+        <div class="map__center-wrapper">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+            <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320"
+              height="362" alt="г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/map-pin-tablet.png">
+            <img class="map__pointer" src="img/map-pin-mobile.png" width="55" height="53" alt="Указатель">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
@@ -158,17 +176,17 @@
       </a>
       <ul class="footer__social-media-list social-media-list">
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#">
+          <a class="social-media-list__link social-media-list__link--vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#">
+        <li class="social-media-list__item ">
+          <a class="social-media-list__link social-media-list__link--insta" href="#">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#">
+          <a class="social-media-list__link social-media-list__link--fb" href="#">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
@@ -184,6 +202,7 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
