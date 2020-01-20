@@ -9,13 +9,13 @@
 
   @media @desktop-width {
     padding-top: 71px;
+    padding-bottom: 0;
   }
 }
 
 .catalog-goods__title {
   position: relative;
   margin: 0;
-  padding-bottom: 32px;
   font-family: @oswald;
   .text-properties(36px, 53px, 400);
 
@@ -38,7 +38,7 @@
     position: absolute;
     width: 320px;
     height: 1px;
-    bottom: 0;
+    bottom: -32px;
     left: -20px;
     background-color: @dark-grey;
 
@@ -48,11 +48,9 @@
   }
 
   @media @tablet-width {
-    padding-bottom: 33px;
     .text-properties(60px, 60px, 400);
   }
 
   @media @desktop-width {
-    padding-bottom: 23px;
   }
 }
