@@ -178,6 +178,7 @@
 .categories__link {
   position: relative;
   display: block;
+  width: 110px;
   margin-top: 20px;
   font-family: @oswald;
   .text-properties(16px, 16px, 400);
@@ -188,23 +189,6 @@
     color: @dark-grey;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 11px;
-    top: 2px;
-    left: 97px;
-    background-image: url("../img/icon-right-arrow-long.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media @tablet-width {
-      top: 4px;
-      left: 131px;
-    }
-  }
-
   @media @tablet-width {
     margin-top: 57px;
     .text-properties(20px, 20px, 400);
@@ -213,4 +197,45 @@
   @media @desktop-width {
     margin-top: 30px;
   }
+}
+
+.categories__svg-arrow-long {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  top: 2px;
+  right: -10px;
+
+  @media @tablet-width {
+    top: 4px;
+    right: -42px;
+  }
+}
+
+.categories__svg-arrow-verylong {
+  display: none;
+  position: absolute;
+  width: 33px;
+  height: 11px;
+  top: 2px;
+  left: 97px;
+
+  @media @tablet-width {
+    top: 4px;
+    left: 131px;
+  }
+}
+
+.categories__link:hover .categories__svg-arrow-long {
+  display: none;
+}
+
+.categories__link:hover .categories__svg-arrow-verylong {
+  display: block;
+}
+
+.categories__link:active .categories__svg-arrow-verylong {
+  display: block;
+  opacity: 0.3;
 }
