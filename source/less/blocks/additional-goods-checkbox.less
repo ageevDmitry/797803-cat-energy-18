@@ -70,6 +70,7 @@
 }
 
 .additional-goods-chekbox__item {
+  width: 175px;
   margin: 0 0 22px 45px;
 
   &:last-child {
@@ -77,7 +78,7 @@
   }
 
   @media @tablet-width {
-    width: 226px;
+    width: 284px;
     margin: 0 0 49px 59px;
   }
 
@@ -98,58 +99,65 @@
     opacity: 0.3;
   }
 
-  @media @tablet-width {
-    .text-properties(20px, 20px, 400);
-  }
-}
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -45px;
+    width: 31px;
+    height: 31px;
+    border: 1px solid @dark-grey;
+    cursor: pointer;
 
-.additional-goods-chekbox__input + .additional-goods-chekbox__label::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -45px;
-  width: 31px;
-  height: 31px;
-  border: 1px solid @dark-grey;
-  cursor: pointer;
+    @media @tablet-width {
+      top: -4px;
+      left: -58px;
+      width: 40px;
+      height: 40px;
+    }
+  }
 
   @media @tablet-width {
     top: -4px;
     left: -58px;
     width: 40px;
     height: 40px;
+    .text-properties(20px, 20px, 400);
   }
 }
 
-.additional-goods-chekbox__input:checked + .additional-goods-chekbox__label::after {
-  display: block;
-  content: "";
+
+.additional-goods-chekbox__tick-svg {
+  display: none;
   position: absolute;
   top: 2px;
   left: -40px;
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  fill: #72bc45;
 
   @media @tablet-width {
-    top: 7px;
+    top: 4px;
     left: -49px;
+    width: 25px;
+    height: 25px;
   }
 }
 
-.additional-goods-chekbox__input:hover + .additional-goods-chekbox__label::before {
+.additional-goods-chekbox__input:checked+.additional-goods-chekbox__tick-svg {
+  display: block;
+}
+
+.additional-goods-chekbox__label:hover::before {
   border: 1px solid #cfcfcf;
 }
 
-.additional-goods-chekbox__input:active + .additional-goods-chekbox__label::before {
+.additional-goods-chekbox__label:active::before {
   border: 1px solid @dark-grey;
   opacity: 0.3;
 }
 
-.additional-goods-chekbox__input:active + .additional-goods-chekbox__label::after {
+.additional-goods-chekbox__label:active .additional-goods-chekbox__tick-svg {
   opacity: 0.3;
 }
