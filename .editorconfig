@@ -20,10 +20,3 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
-
-[picturefill.js]
-end_of_line = none
-insert_final_newline = none
-trim_trailing_whitespace = none
-indent_style = none
-indent_size = none

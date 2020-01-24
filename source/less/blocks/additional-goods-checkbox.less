@@ -78,17 +78,18 @@
   }
 
   @media @tablet-width {
-    width: 284px;
-    margin: 0 0 49px 59px;
+    width: 226px;
+    margin: 0 0 32px 59px;
   }
 
   @media @desktop-width {
     width: 186px;
-    margin: 0 0 49px 58px;
+    margin: 0 0 32px 58px;
   }
 }
 
 .additional-goods-chekbox__label {
+  display: block;
   position: relative;
   font-family: @oswald;
   .text-properties(16px, 18px, 400);
@@ -111,7 +112,7 @@
     cursor: pointer;
 
     @media @tablet-width {
-      top: -4px;
+      top: -9px;
       left: -58px;
       width: 40px;
       height: 40px;
@@ -119,9 +120,7 @@
   }
 
   @media @tablet-width {
-    top: -4px;
-    left: -58px;
-    width: 40px;
+    width: 170px;
     height: 40px;
     .text-properties(20px, 20px, 400);
   }
@@ -131,14 +130,14 @@
 .additional-goods-chekbox__tick-svg {
   display: none;
   position: absolute;
-  top: 2px;
+  top: -2px;
   left: -40px;
   width: 21px;
   height: 21px;
   fill: #72bc45;
 
   @media @tablet-width {
-    top: 4px;
+    top: -2px;
     left: -49px;
     width: 25px;
     height: 25px;
