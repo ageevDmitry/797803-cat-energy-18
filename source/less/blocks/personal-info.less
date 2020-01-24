@@ -33,11 +33,11 @@
 
 .personal-info__title-wrapper {
   display: block;
-  padding: 0px 22px 0 20px;
+  padding: 0 22px 0 20px;
   background-color: @white;
 
   @media @tablet-width {
-    padding: 0px 36px 0 39px;
+    padding: 0 36px 0 39px;
   }
 }
 
@@ -92,51 +92,53 @@
 .personal-info__label {
   position: relative;
   .form-label;
-
-  &--mail {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 17px;
-      height: 13px;
-      top: 17px;
-      right: 16px;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
-    @media @tablet-width {
-      &::after {
-        top: 20px;
-        right: 21px;
-      }
-    }
-  }
-
-  &--phone {
-    &::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 14px;
-      right: 13px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
-    @media @tablet-width {
-      &::after {
-        top: 17px;
-        right: 18px;
-      }
-    }
-  }
 }
 
 .personal-info__input {
   position: relative;
   .form__input;
+}
+
+.personal-info__mail-svg {
+  position: absolute;
+  width: 17px;
+  height: 13px;
+  top: 17px;
+  right: 16px;
+
+  @media @tablet-width {
+    top: 20px;
+    right: 21px;
+  }
+}
+
+.personal-info__phone-svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 13px;
+
+  @media @tablet-width {
+    &::after {
+      top: 17px;
+      right: 18px;
+    }
+  }
+}
+
+.personal-info__input--mail:focus + .personal-info__mail-svg {
+  fill: #68b738;
+}
+
+.personal-info__input--mail:invalid + .personal-info__mail-svg {
+  fill: @pink;
+}
+
+.personal-info__input--phone:focus + .personal-info__phone-svg {
+  fill: #68b738;
+}
+
+.personal-info__input--phone:invalid + .personal-info__phone-svg {
+  fill: @pink;
 }

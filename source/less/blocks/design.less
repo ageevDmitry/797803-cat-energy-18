@@ -7,11 +7,13 @@
 
   @media @tablet-width {
     width: 162px;
+    margin-left: auto;
     padding: 0;
   }
 }
 
 .design__link {
+  position: relative;
   margin-top: 8px;
   font-family: @arial;
   .text-properties(16px, 16px, 400);
@@ -27,9 +29,25 @@
 }
 
 .design__logo {
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.design__svg {
+  position: absolute;
+  top: -3px;
+  left: 6px;
+  width: 40px;
+  height: 40px;
+  fill: #666666;
+}
+
+.design__logo:hover .design__svg {
+  fill: #68b738;
+}
+
+.design__logo:active .design__svg {
+  opacity: 0.3;
 }

@@ -2,18 +2,6 @@
   position: relative;
   padding: 80px 0 25px 0;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 26px;
-    left: 125px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../img/icon-plus-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   @media @tablet-width {
     justify-content: flex-start;
     min-height: 432px;
@@ -22,11 +10,7 @@
     border: 1px solid @grey;
 
     &::after {
-      width: 60px;
-      height: 60px;
-      top: 54px;
-      left: 132px;
-      background-image: url("../img/icon-plus.svg");
+      display: none;
     }
   }
 
@@ -34,11 +18,25 @@
     width: 245px;
     margin-top: 77px;
     padding: 163px 37px 40px 34px;
+  }
+}
 
-    &::after {
-      top: 54px;
-      left: 91px;
-    }
+.show-all__svg-plus {
+  position: absolute;
+  top: 26px;
+  left: 125px;
+  width: 30px;
+  height: 30px;
+
+  @media @tablet-width {
+    width: 60px;
+    height: 60px;
+    top: 54px;
+    left: 132px;
+  }
+
+  @media @desktop-width {
+    left: 92px;
   }
 }
 

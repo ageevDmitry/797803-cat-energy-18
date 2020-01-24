@@ -45,11 +45,11 @@
 
 .catalog-additional-goods__title-wrapper {
   display: block;
-  padding: 0px 22px 0 20px;
+  padding: 0 22px 0 20px;
   background-color: @white;
 
   @media @tablet-width {
-    padding: 0px 36px 0 39px;
+    padding: 0 36px 0 39px;
   }
 }
 
@@ -95,19 +95,6 @@
     background-size: 280px auto;
   }
 
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 64px;
-    left: 115px;
-    width: 55px;
-    height: 60px;
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   @media @tablet-width {
     width: 708px;
     min-height: 200px;
@@ -144,5 +131,22 @@
       top: 64px;
       left: 95px;
     }
+  }
+}
+
+.catalog-additional-goods__svg {
+  position: absolute;
+  top: 64px;
+  left: 115px;
+  width: 55px;
+  height: 60px;
+  fill: @white;
+
+  @media @tablet-width {
+    left: 92px;
+  }
+
+  @media @desktop-width {
+    left: 96px;
   }
 }

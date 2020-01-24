@@ -98,6 +98,10 @@
   @media @tablet-width {
     width: 324px;
   }
+
+  @media @desktop-width {
+    width: 245px;
+  }
 }
 
 .list-goods__table-wrapper {
@@ -114,10 +118,12 @@
 }
 
 .list-goods__title {
+  display: block;
   margin: 20px 0 0 0;
   width: 90px;
   font-family: @oswald;
   .text-properties(16px, 20px, 400);
+  color: @black;
   text-transform: uppercase;
 
   @media @tablet-width {
