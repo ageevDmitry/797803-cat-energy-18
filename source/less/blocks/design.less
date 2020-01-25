@@ -19,6 +19,14 @@
   .text-properties(16px, 16px, 400);
   color: @black;
 
+  @media @tablet-width {
+    margin-top: 9px;
+  }
+
+  @media @desktop-width {
+    margin-top: 14px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -42,6 +50,14 @@
   width: 40px;
   height: 40px;
   fill: #666666;
+
+  @media @tablet-width {
+    top: -1px;
+  }
+
+  @media @desktop-width {
+    top: 3px;
+  }
 }
 
 .design__logo:hover .design__svg {

@@ -126,7 +126,6 @@
   }
 }
 
-
 .additional-goods-chekbox__tick-svg {
   display: none;
   position: absolute;
@@ -144,10 +143,6 @@
   }
 }
 
-.additional-goods-chekbox__input:checked + .additional-goods-chekbox__tick-svg {
-  display: block;
-}
-
 .additional-goods-chekbox__label:hover::before {
   border: 1px solid #cfcfcf;
 }
@@ -159,4 +154,12 @@
 
 .additional-goods-chekbox__label:active .additional-goods-chekbox__tick-svg {
   opacity: 0.3;
+}
+
+.additional-goods-chekbox__input:checked + .additional-goods-chekbox__tick-svg {
+  display: block;
+}
+
+.additional-goods-chekbox__input:disabled + .additional-goods-chekbox__label  {
+  color: tomato;
 }

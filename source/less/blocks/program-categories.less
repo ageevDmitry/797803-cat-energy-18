@@ -116,3 +116,20 @@
 .program-categories__input:active + .program-categories__label::after {
   opacity: 0.3;
 }
+
+.program-categories__input:disabled + .program-categories__label {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.program-categories__input:disabled + .program-categories__label::before {
+  cursor: default;
+}
+
+.program-categories__input:disabled + .program-categories__label:hover::before {
+  border: 1px solid @dark-grey;
+}
+
+.program-categories__input:disabled + .program-categories__label::after {
+  cursor: default;
+}
