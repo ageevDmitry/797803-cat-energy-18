@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy: Форма</title>
+  <link rel="preload" href="/fonts/PTSansNarrow.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
   <script>
     document.createElement("picture");
+
   </script>
   <script src="js/picturefill.js" async=""></script>
 </head>
@@ -82,18 +84,18 @@
             <ul class="program-categories__list">
               <li class="program-categories__item">
                 <input class="program-categories__input visually-hidden" type="radio" name="categories" value="slim"
-                  id="categories-slim" tabindex="0" aria-label="Похудение" checked="" disabled>
+                  id="categories-slim" tabindex="0" aria-label="Похудение" checked="">
                 <label class="program-categories__label" for="categories-slim">Похудение</label>
               </li>
               <li class="program-categories__item">
                 <input class="program-categories__input visually-hidden" type="radio" name="categories" value="plump"
-                  id="categories-plump" tabindex="0" aria-label="Похудение" disabled>
+                  id="categories-plump" tabindex="0" aria-label="Похудение">
                 <label class="program-categories__label" for="categories-plump">Набор массы</label>
               </li>
               <li class="program-categories__item">
                 <input class="program-categories__input visually-hidden" type="radio" name="categories"
-                  value="dont-know" id="categories-dont-know" tabindex="0" aria-label="Не знаю (нужен ваш совет)" disabled>
-                <label class="program-categories__label" for="categories-dont-know" >Не знаю (нужен ваш совет)</label>
+                  value="dont-know" id="categories-dont-know" tabindex="0" aria-label="Не знаю (нужен ваш совет)">
+                <label class="program-categories__label" for="categories-dont-know">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </div>
@@ -134,40 +136,24 @@
               class="additional-goods-chekbox__title-wrapper">Дополнительно</span></h2>
           <ul class="additional-goods-chekbox__list">
             <li class="additional-goods-chekbox__item">
-              <label class="additional-goods-chekbox__label" for="good-sugar">Сахарозаменитель
-                <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="sugar"
-                  id="good-sugar" tabindex="0" aria-label="Сахарозаменитель" disabled>
-                <svg class="additional-goods-chekbox__tick-svg" width="24" height="24">
-                  <use xlink:href="#icon-tick"></use>
-                </svg>
-              </label>
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="sugar"
+                id="good-sugar" tabindex="0" aria-label="Сахарозаменитель" checked>
+              <label class="additional-goods-chekbox__label" for="good-sugar">Сахарозаменитель</label>
             </li>
             <li class="additional-goods-chekbox__item">
-              <label class="additional-goods-chekbox__label" for="good-water">Питьевая вода
-                <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="water"
-                  id="good-water" tabindex="0" aria-label="Питьевая вода">
-                <svg class="additional-goods-chekbox__tick-svg" width="24" height="24">
-                  <use xlink:href="#icon-tick"></use>
-                </svg>
-              </label>
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="water"
+                id="good-water" tabindex="0" aria-label="Питьевая вода">
+              <label class="additional-goods-chekbox__label" for="good-water">Питьевая вода</label>
             </li>
             <li class="additional-goods-chekbox__item">
-              <label class="additional-goods-chekbox__label" for="good-milk">Молоко
-                <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="milk"
-                  id="good-milk" tabindex="0" aria-label="Молоко">
-                <svg class="additional-goods-chekbox__tick-svg" width="24" height="24">
-                  <use xlink:href="#icon-tick"></use>
-                </svg>
-              </label>
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good" value="milk"
+                id="good-milk" tabindex="0" aria-label="Молоко">
+              <label class="additional-goods-chekbox__label" for="good-milk">Молоко</label>
             </li>
             <li class="additional-goods-chekbox__item">
-              <label class="additional-goods-chekbox__label" for="good-vitamins">Витамины
-                <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good"
-                  value="vitamins" id="good-vitamins" tabindex="0" aria-label="Витамины">
-                <svg class="additional-goods-chekbox__tick-svg" width="24" height="24">
-                  <use xlink:href="#icon-tick"></use>
-                </svg>
-              </label>
+              <input class="additional-goods-chekbox__input visually-hidden" type="checkbox" name="good"
+                value="vitamins" id="good-vitamins" tabindex="0" aria-label="Витамины">
+              <label class="additional-goods-chekbox__label" for="good-vitamins">Витамины</label>
             </li>
           </ul>
         </div>
